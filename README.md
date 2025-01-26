@@ -5,21 +5,21 @@ To create an image album, you can organize your images in a dedicated folder and
 1. **Organize Images**: Place all your images in a folder, for example, `images/album`.
 2. **Reference Images**: Use the following Markdown syntax to display the images:
    ```markdown
-   ![Alt text](images/album/image1.jpg)
-   ![Alt text](images/album/image2.jpg)
+   ![Alt text](images/image1.jpg)
+   ![Alt text](images/image2.jpg)
    ```
 
 ### Example
 Here’s how you can display images in your README:
 ```markdown
-![Image 1](images/album/image1.jpg)
-![Image 2](images/album/image2.jpg)
-![Image 3](images/album/image3.jpg)
-![Image 4](images/album/image4.jpg)
-![Image 5](images/album/image5.jpg)
-![Image 6](images/album/image6.jpg)
-![Image 7](images/album/image7.jpg)
-![Image 8](images/album/image8.jpg)
+![Image 1](images/image1.jpg)
+![Image 2](images/image2.jpg)
+![Image 3](images/image3.jpg)
+![Image 4](images/image4.jpg)
+![Image 5](images/image5.jpg)
+![Image 6](images/image6.jpg)
+![Image 7](images/image7.jpg)
+![Image 8](images/image8.jpg)
 
 ```
 
