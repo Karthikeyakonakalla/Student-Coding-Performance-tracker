@@ -1,16 +1,3 @@
-## Image Album
-
-![Image 1](images/image1.png)
-![Image 2](images/image2.png)
-![Image 3](images/image3.png)
-![Image 4](images/image4.png)
-![Image 5](images/image5.png)
-![Image 6](images/image6.png)
-![Image 7](images/image7.png)
-![Image 8](images/image8.png)
-
-
-
 # Project Title: DSAAllocator
 
 ## Description
@@ -31,6 +18,23 @@ DSAAllocator is a web application designed to allocate Data Structures and Algor
 - **View Verified Submissions**: Show the number of verified submissions.
 - **Completion Rate**: Display the percentage of problems solved.
 - **Problems Table**: List of problems with links to solve them, status of submissions, and actions to submit solutions or view details.
+
+
+## Image Album
+
+![Image 1](images/image1.png)
+![Image 2](images/image2.png)
+![Image 3](images/image3.png)
+![Image 4](images/image4.png)
+![Image 5](images/image5.png)
+![Image 6](images/image6.png)
+![Image 7](images/image7.png)
+![Image 8](images/image8.png)
+
+
+
+
+
 
 ## Installation
 To set up the project locally, follow these steps:
