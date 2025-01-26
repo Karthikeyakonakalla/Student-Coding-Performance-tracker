@@ -1,3 +1,21 @@
+## Image Album Instructions
+
+To create an image album, you can organize your images in a dedicated folder and reference them in your README file.
+
+1. **Organize Images**: Place all your images in a folder, for example, `images/album`.
+2. **Reference Images**: Use the following Markdown syntax to display the images:
+   ```markdown
+   ![Alt text](images/album/image1.jpg)
+   ![Alt text](images/album/image2.jpg)
+   ```
+
+### Example
+Here’s how you can display images in your README:
+```markdown
+![Image 1](images/album/image1.jpg)
+![Image 2](images/album/image2.jpg)
+```
+
 # Project Title: DSAAllocator
 
 ## Description
