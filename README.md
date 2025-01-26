@@ -14,6 +14,13 @@ Here’s how you can display images in your README:
 ```markdown
 ![Image 1](images/album/image1.jpg)
 ![Image 2](images/album/image2.jpg)
+![Image 3](images/album/image3.jpg)
+![Image 4](images/album/image4.jpg)
+![Image 5](images/album/image5.jpg)
+![Image 6](images/album/image6.jpg)
+![Image 7](images/album/image7.jpg)
+![Image 8](images/album/image8.jpg)
+
 ```
 
 # Project Title: DSAAllocator
