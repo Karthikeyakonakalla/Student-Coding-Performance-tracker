@@ -1,0 +1,546 @@
+{
+    "23a85a6109": {
+        "test1": {
+            "filename": "23A85A6109_test1_vbs_test_duplicates_20241118_070842.png",
+            "verified": true,
+            "verification_details": {
+                "manual_verification": true,
+                "verified_by": "admin",
+                "timestamp": "2024-11-27T09:29:44.175803"
+            },
+            "timestamp": "2024-11-25T17:48:28.087773"
+        },
+        "test0": {
+            "filename": "23A85A6109_test0_vbs_test_duplicates_20241118_070842.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "\u00a9 \u00ae HTMLE 26 Practicc 26 Sumof _ \u20ac) vbs-0f @ vbsmc \u00a5 Smash [l Revolut 3 Prioritiz A Llama0 @ ChatGF  \u00ae FreeCl @ Studen =& SortOs + O X\r\n\u00a9 & www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 [CHONRCN IRV I N REWUN = |\r\n\r\n() [INew folder\r\nGl ! ! e\r\n. Courses v  Tutorials v  Jobs v  Practice v  Contests v ee (o} ol | e\r\n8= P B Editorial R O Comments ey Average Time: 10m G\r\nB NN 7 N e A\r\n\r\nOutput Window X 7\r\n] \u2014 3\r\nA 9 class Solution {\r\n\r\nCompilation Results Custom Input Y.0.G.1. (Al Bot) kU public:\r\ney EE R void sort@12(vector<int>& arr) {\r\nk\u00a5l return sort(arr.begin(), arr.end());\r\n= Problem Solved Successfully & \u2018Suggest Feedback 13 s [\r\nEZ AT\r\nd i\r\n=1 QSR Y| Attempts : Correct / Total ;g\r\n18\r\n1111/1111 b FS\r\nL PL}\r\nAccuracy : 100% 21 \u00aeM// } Driver Code Ends\r\n\r\n| Time Taken\r\n\r\n0.2\r\nC] o You get marks only for the first correct submission if you solve the problem without viewing\r\nS the full solution.\r\n\r\nB\r\nox\r\n) Custom Input\r\n"
+            },
+            "timestamp": "2024-11-25T17:48:28.421924"
+        },
+        "test3_leetcode": {
+            "filename": "23A85A6109_test3_leetcode_Screenshot_2024-11-25_140523.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+                "extracted_text": "@ Bl Revo @ OCR 73 IFOA <@ llam: e BV @ Ane 2 Mars o5 Miss <, Data 3 Optr Al You: (O Alcc [ Alcc \u20ac) High @ HTM \u00a9 Alcc e S X\r\n4 @ @ leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/ OREO>O| B & LmE]|\r\n() I New folder\r\n(9 = p 2 7 Lo T 8\r\n& = Problemlist < > X3 % PRn \u00aeDsumt \u00ae O % B Oo @ Premium\r\n11 P SSSSSS\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014_\u2014_\u2014_\u2014_\u2014_\u2014_\u2014_\u2014_\u2014_\u2014_\u2014\r\na \u2018 | Description | [T Editorial | D Accepted X | /. Solutions | \" Submissions o< \u2018 BRI\r\nPR @ | Javav @ Auto SR AR O AR\r\ni 1 class Solution { B\r\n& (et ) [aal S TAE - 2 public int strStr(String haystack, String needle) {\r\nA ) Ly5Pbifg0s submitted at Nov 25, 2024 14:01 N P T G \u2014\r\nP return haystack. index0f (needle);\r\no .\r\n\u00ae Runtime 6] oYy 6 1\r\nZ (R Y PR ARV\r\n(@ R e\r\nE\u2018 R\r\n\u20ac\r\nSaved Ln1,Col 1\r\no |\r\nN - 77.19% of solutions used 0 ms of runtime B S R\r\n. - h:ysvam\ufb02 R\r\n7 3 ck =\r\nL] \"sadbutsad\"\r\n- needle =\r\nCode | Java\r\n\u00ae e\r\n> class Solution {\r\npublic int strStr(String haystack, String needle) {\r\nif (needle.isEmpty()) return 0;\r\nreturn haystack. indexOf (needle);\r\nox\r\nH\r\nb BRG]\r\n"
+            },
+            "timestamp": "2024-11-25T17:48:33.611322"
+        },
+        "test_final": {
+            "filename": "23a85a6109_test_final_Screenshot_2024-12-12_211837.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "@ Student Details - DSA Pro @ Student Dashboard Sort 0s, s and 2s | Practic =+\r\nCc @ www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 @O R\u00ae VI IR =\r\n[J New folder\r\nSALE\r\nCourses v  Tutorials v  Jobs v  Practice v  Contests v ee Q & @ g B\r\nISl = <> Problem B Editorial @ Submissions O Comments Java(L8) - Average Time: 10m [\u00a9 start Timer \u00ae|\r\niy\r\nOutput Window X 32\r\n- 33 Solution {\r\n34\r\n35 sorte12(int[] arr) {\r\nE\r\nEY [ CLO N\r\nProblem Solved Successfully & Suggest Feedbac 38\r\n39\r\nL) ]\r\nTest Cases Passed Attempts : Correct / Total 2; \u00a5\r\nE)\r\n1111/1111 3/4 a4\r\n|\r\nccuracy : 75% o\r\n| | Time Taken\r\n1.92\r\n__ You get marks only for the first correct submission if you solve the problem without viewing\r\n\" the full solution\r\nSolve Next IR\r\nX+ Custom Input (LRI e\r\n"
+            },
+            "timestamp": "2024-12-13T09:57:39.400783"
+        },
+        "hackerrack": {
+            "filename": "23a85a6109_hackerrack_Screenshot_2024-12-13_221615.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "www.hackerrank.com/challenges/pangrams/problem",
+                "extracted_text": "\u00a9 Regex URL Validat (@ Free Text to Speec @ Chat Blackbox: Al \u00ae voby vercel @ HTML Previewer @ Login @ Student Dashboard s Pangrams | HackerRank &\r\n\u00a9 @& www.hackerrank.com/challenges/pangrams/problem (Ol POl B\u00ae & &L= =\r\n[J New folder\r\n0 o tulati\r\nongratuliations\r\nNextChallenge\r\nYou solved this challenge. Would you like to challenge your friends? [} 3 [0\r\n& Test case O - K\r\nCompiler Message\r\nSuccess\r\n& Testcasel\r\n@ Testcase2 @ Input (stdir) Download\r\nWe promptly judged antique ivory buckles for the next prize\r\n& Testcase3 &\r\nExpected Output Download\r\n& Testcase 4 &\r\npangram\r\n)\r\n& Testcase5 &\r\n)\r\n& Testcase 6 &\r\n"
+            },
+            "timestamp": "2024-12-13T22:16:42.364232"
+        },
+        "hackerearth": {
+            "filename": "23a85a6109_hackerearth_Screenshot_2024-12-13_222459.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "www.hackerearth.com/problem/algorithm/prime-numbers/",
+                "extracted_text": "4\r\n@ \u00a9 Regex URL Val @ Free Textto Sp @ Chat Blackbox \u00ae voby vercel @ HTML Previewer @ Login @ Student Dasht Wi Pangrams | Ha _ & Q \u2014 I\r\nS C & www.hackerearth.com/problem/algorithm/prime-numbers/ ORO>O| B & L= =]\r\n) CINew foider\r\n=] R\r\n. Problem\r\n= Given a number n, tell if it is a prime number. Print 1 if it is a prime number and print 0\r\n= if the given number is not prime.\r\n\u00ae Input :\r\n0\r\n= A single integer n.\r\ng\r\nOutput :\r\nx|\r\n1, if the number is prime.\r\n& 0, if the number is not prime. 14:1 vscode\r\n2 Print a \\n after the answer.\r\n) Test against custom input \u00a5 Compile & Test code ROy )\r\nConstraints :\r\nA 2<=n<=100\r\nSubmission ID: 104420038\r\nB % %\r\n\u00ae _ . | RESULT: @ Accepted Refer judge environment\r\n= Score Time (sec) Memory (KiB) Language\r\no\r\n- Explanation Input Result  Time (sec) Memory (KiB) Score\r\nO] Since 5 is a prime number, the output is 1. Input #1 @Accepted  0.017648 2 25\r\nb4\r\nInput #2 @Accepted  0.025308 2880 25\r\n=]\r\nInput #3 @Accepted  0.016987 2 25\r\n=%\r\n"
+            },
+            "timestamp": "2024-12-13T22:33:08.048764"
+        },
+        "coding ninjas": {
+            "filename": "23a85a6109_coding_ninjas_vbs_testing001_20241117_233544.png",
+            "verified": true,
+            "verification_details": {
+                "manual_verification": true,
+                "verified_by": "admin",
+                "timestamp": "2024-12-31T12:34:25.615288"
+            },
+            "timestamp": "2024-12-14T09:48:36.069499"
+        },
+        "Secret Message": {
+            "filename": "23a85a6109_Secret_Message_Screenshot_2024-12-31_112821.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+                "extracted_text": "@ Admin Dashboard @ karthikeyakonakallal8gm Extraction of secret mess ==\r\nC &@ www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1 @Q ORO > Q BQ & \u2014\r\n[3 New folder\r\n. . 45\r\nCourses vv Tutorials vv Jobs vv Practice v Contests wv \u2014H\u2014 Q [As] B\r\n\u2014 <*> Problem @\u00ae Submissions {\u00a9 Comments Java (18) ~ E Start Timer \u00ae|\r\n< -\u2014 | 1\r\nOutput Window X 23\r\n\u2014 24\r\n25\r\n26\r\n27 Solution\r\n28 {\r\nProblem Solved Successfully Vv] 29 String ExtractMessage(String S)\r\n30 {\r\n31\r\nTest Cases Passed Attempts : Correct / Total i } EE pe be SN Sr (ol\r\n34 }\r\n20/20 1/1 .\r\n[= 36\r\n100% a>\r\n\u00ae Points Scored @ Time Taken\r\n1/1 0.94\r\no 408 2\r\nSolve Next\r\nKick start your career with GfG 160! [>]\r\nBE _\u2014 CX\r\n"
+            },
+            "timestamp": "2024-12-31T11:29:33.589270"
+        },
+        "test00": {
+            "filename": "23a85a6109_test00_Screenshot_2024-12-31_123256.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/just-one-mismatch1714/1",
+                "extracted_text": "@ Student Dashboard @ Student Dashboard Just One Mismatch | Prac Just One Mismatch | Pra ==\r\n\u00a9 @& www.geeksforgeeks.org/problems/just-one-mismatch1714/1 QO ERO > Ol B99 & YL =\r\na [3 New folder\r\nCourses vv Tutorials vv Jobs &v Practice vv Contests wv =5 Q \u00ae [As] B\r\n= </> Problem @ Editorial (\u00a9 Submissions O Comments Java (1.8) ~ E Start Timer \u00ae|\r\n1\r\na. CL 7\r\nMy Submissions All Submissions 8\r\n9 Solution\r\n10 String isStringExist(String arr[], N,String S){\r\nrr Refresh 11\r\n12 (String sl:arr)\r\nTime (IST) Status Marks Lang Test Cases Code 13 {\r\n14 cnt=0;\r\n2024-12-31 11:46:35 Correct 1 java ~~ 165/165 View 15 (s1.length()==S.length())\r\n16 {\r\n17 ( i=0;i<S.length();i++)\r\n18 {\r\n19 (sl.charAt(i) != S.charAt(i))\r\n20 {\r\nalo Js cnt++;\r\n22 }\r\n23 }\r\n\u00ae 24 (cnt )\r\n25 {\r\n26 5\r\n27 }\r\no 28 }\r\n29 }\r\n30 H\r\nBi | }\r\n32}\r\n33 Ea\r\nO- : Sl Compile & Run Submit\r\n"
+            },
+            "timestamp": "2024-12-31T12:33:20.893561"
+        }
+    },
+    "23a85a6111": {
+        "test1": {
+            "filename": "23A85A6111_test1_Rice-Blast-Disease-Symptoms-Signs-Disease-Cycle-and-Management.png",
+            "verified": true,
+            "verification_details": {
+                "manual_verification": true,
+                "verified_by": "admin",
+                "timestamp": "2024-11-27T09:29:44.175816"
+            },
+            "timestamp": "2024-11-25T17:50:01.382993"
+        },
+        "test0": {
+            "filename": "23A85A6111_test0_vbs_test_duplicates_20241118_070842.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "\u00a9 \u00ae HTMLE 26 Practicc 26 Sumof _ \u20ac) vbs-0f @ vbsmc \u00a5 Smash [l Revolut 3 Prioritiz A Llama0 @ ChatGF  \u00ae FreeCl @ Studen =& SortOs + O X\r\n\u00a9 & www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 [CHONRCN IRV I N REWUN = |\r\n\r\n() [INew folder\r\nGl ! ! e\r\n. Courses v  Tutorials v  Jobs v  Practice v  Contests v ee (o} ol | e\r\n8= P B Editorial R O Comments ey Average Time: 10m G\r\nB NN 7 N e A\r\n\r\nOutput Window X 7\r\n] \u2014 3\r\nA 9 class Solution {\r\n\r\nCompilation Results Custom Input Y.0.G.1. (Al Bot) kU public:\r\ney EE R void sort@12(vector<int>& arr) {\r\nk\u00a5l return sort(arr.begin(), arr.end());\r\n= Problem Solved Successfully & \u2018Suggest Feedback 13 s [\r\nEZ AT\r\nd i\r\n=1 QSR Y| Attempts : Correct / Total ;g\r\n18\r\n1111/1111 b FS\r\nL PL}\r\nAccuracy : 100% 21 \u00aeM// } Driver Code Ends\r\n\r\n| Time Taken\r\n\r\n0.2\r\nC] o You get marks only for the first correct submission if you solve the problem without viewing\r\nS the full solution.\r\n\r\nB\r\nox\r\n) Custom Input\r\n"
+            },
+            "timestamp": "2024-11-25T17:50:04.837380"
+        },
+        "test_final": {
+            "filename": "23a85a6111_test_final_Screenshot_2024-12-12_195917.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "v @ Student Dashboard PR R TP P o o [ S ] P\r\n& 5 C 2% geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 Q% O @ :\r\n23 | [ AllBookmarks\r\nCourses v  Tutorials v  Jobs v  Practice v  Contests v % Q . O oy \u00b0\r\n= </>Problem B Editorial \u00a9 Submissions \u00a9 Comments L EUEE R TR O Start Timer \u00a9)] OE @O0\r\ne Driver Code Ends\r\nMy Submissions Al Submissions v SRt \u2014 S |\r\n34 public void sort@12(int[] arr) {\r\n35\r\ns 1B S 3\r\n37 }\r\nTime (IST) e Marks  Lang TestCases Code 38 WM// } Driver Code Ends L}\r\n2024-11-06 01:09:22 Correct 2 java  1111/1111 =\r\n) ey\r\n"
+            },
+            "timestamp": "2024-12-13T10:01:24.214139"
+        },
+        "test3_leetcode": {
+            "filename": "23a85a6111_test3_leetcode_Screenshot_2024-12-13_100528.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+                "extracted_text": "@ @ Bulb Switch Mobile Fix (@) Free Textto Speech &~ @ Chat Blackbox: Al Code [ vO by Vercel @ HTML Previewer @ Student Dashboard & Q = X\r\nc @& leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/ (ORI IS C?| [ S R A2 = |\r\n[aEE=L T\r\n\u2014 Py * \"\r\nR SR %G PR \u00aeswmt @ O B \u00ae Oo @@ Premim\r\n.e\u2019 \u2018 | Description | [TJEditorial = /. Solutions | \" Submissions | \u2018D Accepted X HHERY \u2018 BRI\r\ns < All Submissions @ | Javav @ Auto SR AR O AR\r\nN 1 class Solution { ]\r\n\u00a9 (et ) [aal S TAE - F3 public int strStr(String haystack, String needle) {\r\n=0 ) Ly5Pbifg0s submitted at Nov 25, 2024 14:01 ) for(int i = 0, j = needle.length(); j<=haystack.length(); i++,j++){\r\nP if(haystack. substring(i,3) . equals(needle)){\r\no~ 5 IS T\r\n\u00ae Runtime 6] oYy 3 3\r\n7 3\r\n2 (R TV X PO IR LY 1) s T\r\no R N e B b\r\nR\r\n& Ui Saved Ln1,Col 1\r\n\u20ac\r\n@ Continue to work on your code from 11/25/2024, 20124 PM ~ Restore X\r\n0\r\n50% Testcase = Test Result\r\n| ] Case 1 Case2\r\n\u2014 @ haystack =\r\n) \"sadbutsad\"\r\n- needle =\r\nCode | Java\r\n\u00ae e\r\n> class Solution {\r\npublic int strStr(String haystack, String needle) {\r\n5 if (needle.isEmpty()) return ;\r\nreturn haystack. indexOf (needle);\r\nox H\r\ns BERETNE)\r\n"
+            },
+            "timestamp": "2024-12-13T10:06:11.923501"
+        },
+        "hackerearth": {
+            "filename": "23a85a6111_hackerearth_Screenshot_2024-12-13_222459.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "www.hackerearth.com/problem/algorithm/prime-numbers/",
+                "extracted_text": "\u00a9 Regex URL Val @ Free Textto Sy @ Chat Blackbox \u00ae voby vercel @ HTML Previewer @ Login @ Student Dasht us Pangrams | Ha I Prime Numbers | Practice  +\r\ns @ @ www.hackerearth.com/problem/algorithm/prime-numbers/ [ON: POl B\u00ae & &L= =\r\n[J New folder\r\nm Problem\r\nGiven a number n, tell if it is a prime number. Print 1 if it is a prime number and print 0\r\nif the given number is not prime.\r\nInput :\r\nA single integer n.\r\nOutput :\r\n1, if the number is prime.\r\n0, if the number is not prime 14:1 vscode\r\nPrint a \\n after the answer. - \u2014 \u201d\r\n( ) Test against custom input \u00a5 \u2018 Compile & Test code \u2018 RO AL\r\nConstraints : \u2014\r\n2<=n<=100\r\nSubmission ID: 104420038\r\n) . . | RESULT: @ Accepted\r\nScore Time (sec) Memory (KiB) Language\r\nL]\r\nExplanation Input Result  Time (sec) Memory (KiB) Score\r\nSince 5 is a prime number, the output is 1 Input #1 @Accepted  0.017648 2 25\r\nInput #2 @Accepted  0.025308 2880 25\r\nInput #3 @Accepted 0016987 2 25\r\n"
+            },
+            "timestamp": "2024-12-13T23:36:03.599729"
+        },
+        "hackerrack": {
+            "filename": "23a85a6111_hackerrack_1000086430.jpg",
+            "verified": null,
+            "verification_details": {
+                "verified": null,
+                "link_matched": null,
+                "problem_solved": false,
+                "extracted_link": null,
+                "extracted_text": "= MODELS \u00a9 4+ New Features  ImageGeneration  AppBuider Refer  CreateAgent JetBrains on\r\n1a110 0 1-1-1220 012-2h24\u00a27 014 0 21-2 51-9 84-50 85-105 1-47-25-71-77-71h-\r\n1Zm-12 129h-11-2-114-62-1-3-22-12a110 0 10-12 2 0 0 11-2h32\u00a210 0 16 10 16 25-127-\r\n13 55-37 56Zm48 95c8 0 13-6 13-13 0-8-5-14-13-14-7 0-13 6-13 14 0 7 6 1313 13Zm-\r\n10-14c0-6 4-10 10-10s10 4 10 10c0 7-3 11-10 T15-10-4-10-11ZmS5 7hdv-5h1c3 025 3\r\n5h4c-10 0-6-3-6 1-1 3-2 3-45-2-4-6-4h-6v14Zm4-8v-3h1c2 0 2 0 2 21-2 Th-12\"/>\r\n</svg> </div> </main>\"\r\nwhat if i want \"vbs\"\r\nBLACKBOXAI\r\n1 don't know!\r\n& Q@ = (share + New >\u00bb Continue \u00a9 GPT-40 A\\ Claude-Sonnet\r\nMessage Blackbox or @mention agent ' @\r\n@ WebSearch  [ Generatelmage \u00a9 DeepSearch @ Upload 4 Agent\r\n"
+            },
+            "timestamp": "2024-12-14T16:50:42.113973"
+        },
+        "penalty-shoot-out": {
+            "filename": "23a85a6111_penalty-shoot-out_1000086450.jpg",
+            "verified": null,
+            "verification_details": {
+                "verified": null,
+                "link_matched": null,
+                "problem_solved": true,
+                "extracted_link": null,
+                "extracted_text": "0 23.7 Ne\r\n\u00ae 36:49 A RY Ek 78\r\no\u2014 Q\r\n{} 9c geeksforgeeks.org/problems/the-pena + (4) H\r\n= =) an\r\nRt [Rr [oT [oY\r\nMy Submissions All Submissions.\r\n[EE\r\nLB) HE LEY Lang CET Code LC]\r\nPLES VATE AVL) Correct 0? EZ] 2100/2100 View\r\n2024-11-11 00:03:58 Correct by EZ] 2100/2100 View\r\nWe use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and\r\nunderstood our Cookie Policy & Privacy Policy\r\n_\r\n"
+            },
+            "timestamp": "2024-12-14T17:15:40.360388"
+        }
+    },
+    "karthikeya.kingler18@gmail.com": {
+        "test1": {
+            "filename": "karthikeya.kingler18gmail.com_test1_Screenshot_2024-12-14_171632.png",
+            "verified": false,
+            "verification_details": {
+                "verified": false,
+                "link_matched": false,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-Os-1s-and-2s4231/1",
+                "extracted_text": "v @ Student Dashboard X | 9% Sort0s 1sand 2s |Practice|Ge X @ Student Details - DSA Problem X | @ 22a81a6186_hackerrack Screen X | @ 22a81a6186_test0_Screenshot . X | + - 9 X\r\n& 5 \u20ac 2% geeksforgeeks.org/problems/sort-an-array-of-Os-1s-and-2s4231/1 U I w S\r\nL (YL\r\nCourses v  Tutorials v  Jobs v  Practice v  Contests v ee (o2 Q +1:] c\r\n= </>Problem B Editorial O [ JECYEE: - PR et [0 start Timer \u00a9) DE\u00ae O =\r\no\r\nOutput Window X 32\r\n- 33\r\n34 class Solution {\r\nCompilation Results Custom Input Y.0.G.l. (Al Bot) 35\r\n\u2014\u2014 E public void sorte12(int[] arr) {\r\n37\r\nProblem Solved Successfully Suggest Feedback 38 Arrays.sort(arr); =\r\n39\r\n\u00a3 \u00a5\r\nTest Cases Passed PNy (e PRl il\r\nEYa\r\n11111111 bYE\r\nTR ()\r\nTime Taken\r\n2.12\r\no You get marks only for the first correct submission if you solve the problem without viewing\r\nthe full solution.\r\na Customlnput | Compile &Run -\r\n30\u00b0C [T} 7 o BE 17:16\r\n\u2018Haze [ M L/ | e i \u2018 ' . \u2018 @ R UL RPYPRPYR\r\n"
+            },
+            "timestamp": "2024-12-14T17:16:47.145031"
+        },
+        "test0": {
+            "filename": "karthikeya.kingler18gmail.com_test0_Screenshot_2024-12-14_171632.png",
+            "verified": false,
+            "verification_details": {
+                "verified": false,
+                "link_matched": false,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-Os-1s-and-2s4231/1",
+                "extracted_text": "v  @ Student Dashboard x Sort 0s, 1sand 2s | Practice | Ge X ~~ @ Student Details - DSA Problem X | @ 22a81a6186_hackerrack Screen X | @ 22a81a6186_test0 Screenshot X | + - 2 xX\r\n& 5 C 2% geeksforgeeks.org/problems/sort-an-array-of-Os-1s-and-2s4231/1 Qa x 0 @ :\r\nEE [3 All Bookmarks\r\nCourses v Tutorials v Jobs vv Practice v Contests v Q ES no [5] (\u00ab]\r\n= </>Problem B\u00ae Editorial \u00a9 Comments Java (18) Average Time: 10m ODE @\u00ae 0 x\r\n1 ==\r\nOutput Window x 32\r\n- 33\r\n34 class Solution {\r\nCustom Input Y.0.G.I. (Al Bot) 35\r\n36 public void sorte12(int[] arr) {\r\n37\r\nProblem Solved Successfully Suggest Feedback 38 Arrays.sort(arr);\r\n39\r\n40 \u00a5\r\n. 41}\r\nTest Cases Passed Attempts : Correct / Total 25\r\n1111/1111 2/3\r\nAccuracy : 66%\r\nTime Taken\r\n2.12\r\n\u00a9 You get marks only for the first correct submission if you solve the problem without viewing\r\nthe full solution.\r\n[557] Custom Input | Compile & Run Submit\r\n30\u00b0C FT] o \u00ae C ENG 17:16\r\n\"ee Em Q Search en mo Gm e [=] 2 k 2 [Z| \u00a9 NT DO om, &\r\n"
+            },
+            "timestamp": "2024-12-14T17:40:03.464791"
+        },
+        "test3_leetcode": {
+            "filename": "karthikeya.kingler18gmail.com_test3_leetcode_Screenshot_2024-12-14_171410.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/",
+                "extracted_text": "v @ StudentDashboard X & Findthelndexofthe X 95 The PenaltyShootou X | 6 Encyptthestring- ' X | @ StudentDetails-DS' X | @ 22a81a6186hackerr X | @ 22a81a6186test0S X | + S\r\n& 5 C % leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/ * O @ :\r\nB | 3 All Bookmarks\r\n\u2014_ \u2014 * \"\r\n& = Problemlist < > \u00a2 % PRn \u00aeswmt @ O IO I T\r\n\u2018 Description | (I Editorial |\\ Solutions |~ Submissions | \u2018D Accepted X \u2018 RRe HHEEY\r\n< All Submissions @ | Javav @ Auto =S HO9D 2\r\n2 1 class Solution { B\r\n(et [an TR - F3 public int strStr(String haystack, String needle) {\r\nI T e P PP T Y R PR} 5\r\n4 int haylength = haystack.length();\r\nB int needlelength = needle.length();\r\n\u00a9 Runtime 6] 3\r\nb for(int i =0; i<= haylength - needlelength;i++){\r\nO ms  Beats 100.00% ] if (haystack.substring(i, i + needlelength).equals(needle)) {\r\n9 LT\r\n10 b\r\n[V 11 i\r\n12 return -1;\r\n41.78 MB | Beats 19.74% 13 \u00a5\r\nECEES\r\nR\r\ne ] Ln1,Col 1\r\n&\r\nTestcase = Test Result\r\n50% S\r\nCase 1 Case2\r\nP\r\nhaystack =\r\n[0\r\n\"sadbutsad\"\r\nneedle =\r\nCode | Java RV TN}\r\n30\u00b0C T N \u2018 [N e\r\n\u2018Hm mm | Q Search M L/ | e i \u2018 ' . @ R UL PP\r\n"
+            },
+            "timestamp": "2024-12-14T17:14:37.765672"
+        },
+        "hackerrack": {
+            "filename": "karthikeya.kingler18gmail.com_hackerrack_Screenshot_2024-12-14_165248.png",
+            "verified": null,
+            "verification_details": {
+                "verified": null,
+                "link_matched": null,
+                "problem_solved": true,
+                "extracted_link": null,
+                "extracted_text": "~  @ Admin Dashboard X | @ Student Dashboard X Wi Pangrams | HackerRank X \u00b0c Sort0s 1sand 2s | Practice [Ge X | + - 2 xX\r\na. oie:\r\n88 | C3 All Bookmarks\r\nNext Challenge\r\n7\r\n\u00a9 Test case O Compiler M\r\nSuccess\r\n\u00a9 Test case l\r\n\u00a9 Testcase2 & Input (stdin) Download\r\n| We promptly judged antique ivory buckles for the next prize\r\n\u00a9 Testcase3d &\r\nExpected Output Download\r\n\u00a9 Testcase4 & |\r\npangram\r\n\u00a9 Testcase5 &\r\n\u00a9 Testcase 6 &\r\nFinance headline The \\ . @ ENG 16:52\r\nCd reported 1... 1] Q Search 8% [L O Li] - (J a [ v A \u00a9 wn DO 12200 &\r\n"
+            },
+            "timestamp": "2024-12-14T16:53:12.332063"
+        },
+        "encrypt-string": {
+            "filename": "karthikeya.kingler18gmail.com_encrypt-string_Screenshot_2024-12-14_170327.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+                "extracted_text": "v  @ Admin Dashboard X | @ Student Dashboard x Encrypt the string - 1 | Practice X + = a X\r\n& 5 C 2% geeksforgeeks.org/problems/encrypt-the-string-10337/1 Qa % 0 @ :\r\nEE [3 All Bookmarks\r\nCourses v Tutorials vv Jobs vv Practice wv Contests v Q Ex Qn [+] (\u00ab]\r\n= B Editorial \u00ae Submissions \u00a9 Comments Java (18) + ODE \u00ae Ox\r\n1 ==\r\nOutput Window xX 19\r\n- 20\r\n21\r\nCustom Input Y.0.G.I. (Al Bot) 22 class Solution\r\n23- {\r\n24 String encryptString(String s)\r\nProblem Solved Successfully Suggest Feedback 25 {\r\n26 HashMap<Character, Integer>map = new HashMap<>();\r\n27 char prev = s.charAt(0);\r\n. 28 StringBuilder res \u2014 new StringBuilder();\r\nTest Cases Passed Attempts : Correct / Total % CEPR, CE Er ran, GYIDE\r\n30 for(int i=1; i<s.length(); i++){\r\n38/38 3/4 31 char c - s.charAt(i);\r\n32 if(cl=prev){\r\nAccuracy : 75% 33 res.append(prev);\r\n34 res.append(map.get(prev));\r\n35 map. remove(prev);\r\n. 36 prev = c;\r\nTime Taken 37\r\n38 }\r\n0.65 39 map.put(c, map.getOrDefault(c, 0):1);\r\n40\r\na1\r\n42 }\r\n43 res.append(s.charAt(s.length()-1));\r\n@ You get marks only for the first correct submission if you solve the problem without viewing pod ESET Eo Ea SoC Sallam 0)- 10)\r\n~ the full solution 6\r\nCustom Input | Compile & Run Submit\r\nJPY/INR mr A \u00ae C 4 ENG 17:03\r\nPro Em Q Search en mo Gm e [=] 2 k 2 [Z| \u00a9 nN DDO om, &\r\n"
+            },
+            "timestamp": "2024-12-14T17:03:40.727079"
+        },
+        "penalty-shoot-out": {
+            "filename": "karthikeya.kingler18gmail.com_penalty-shoot-out_Screenshot_2024-12-14_170425.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+                "extracted_text": "~  @ Admin Dashboard X | @ Student Dashboard x The Penalty Shootout | Practice X Encrypt the string - 1| Practice X | + - 2 xX\r\n& 5 C 2% geeksforgeeks.org/problems/the-penalty-shootout3810/1 Qa x 0 @ :\r\nEE [3 All Bookmarks\r\nCourses v Tutorials v Jobs vv Practice v Contests v Q ES no [5] (\u00ab]\r\n= B Editorial \u00ae Submissions \u00a9 Comments Java (18) + ODE \u00ae Ox\r\n1: ==\r\nOutput Window x 19\r\n- 20\r\n21\r\nCustom Input Y.0.G.I. (Al Bot) 22\r\n23 class Solution\r\n24-{\r\nProblem Solved Successfully Suggest Feedback pL public int penaltyScore(String S)\r\n26 {\r\n27 int c=0;\r\nTest Cases Passed Attempts : Correct / Total fos a IBIS larg) - isi)\r\n30 if(S.charAt(i)==\"2\" && S.charAt(i:l)==\"1\")\r\n2100/2100 3/4 31 {\r\n32 cH}\r\nAccuracy : 75% 33 }\r\n34 }\r\n35 return c;\r\n. 36 \u00a5\r\nTime Taken 37\r\n0.24\r\n. You get marks only for the first correct submission if you solve the problem without viewing\r\nthe full solution.\r\n[557] Custom Input | Compile & Run Submit\r\nGBP/INR mm N \u00ae C ENG 17:04\r\nEm Q Search en mo Gm e [=] 2 k 2 [Z| \u00a9 nN TDD oom, &\r\n"
+            },
+            "timestamp": "2024-12-14T17:04:34.657822"
+        }
+    },
+    "22a81a6192": {
+        "test0": {
+            "filename": "22a81a6192_test0_vbs_test_duplicates_20241118_070842.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "\u00a9 \u00ae HTMLE 5c Practice oc Sum of | sorts anc \u20ac) vbs-01  @ vbs.mc  \u00a5 Smash. [Bl Revolut 3 Prioritiz A Llama0 @ ChatGF wm FreeCl @ Studen \u00b0c SortOs + QQ \u2014 Xx\r\n< >cC & www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 QReOrREOE>V| Ea sm =|\r\n\r\n() [J New folder\r\n[=] : . 27\r\no Courses v Tutorials v Jobs v Practice v Contests v Q Jira}\r\na = <I> Problem B Editorial \u00ae Submissions \u00a9 Comments [cr igs. | Average Time: 10m [EsunTmerg) OF & O x\r\n= 1\u00bb EE// } Driver Code Ends\r\n\r\nOutput Window X 7\r\n[] \u2014 8\r\nA 9 class Solution {\r\n\r\nCompilation Results Custom Input Y.0.G.1. (Al Bot) 10 public:\r\nBo 11+ void sort@12(vector<int>& arr) {\r\n12 return sort(arr.begin(), arr.end());\r\n= Problem Solved Successfully Suggest Feedback 13 } [\r\n14 };\r\n[a 15\r\n= Test Cases Passed Attempts : Correct / Total fs\r\np 18\r\n1111/1111 2/2 fs\r\ni 20\r\nAccuracy : 100% 21 \u00aeW// } Driver Code Ends\r\n\r\nLJ Time Taken\r\n\r\n0.2\r\nLJ)\r\nC] \u00b0 You get marks only for the first correct submission if you solve the problem without viewing\r\n> the full solution.\r\n\r\nSolve Next\r\nox\r\nco) Custom Input\r\n"
+            },
+            "timestamp": "2024-12-14T10:19:19.220632"
+        },
+        "test1": {
+            "filename": "22a81a6192_test1_vbs_restdyfuwert_20241118_000703.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "\u00a9 \u00ae HTMLE 26 Practicc 26 Sumof _ \u20ac) vbs-0f @ vbsmc \u00a5 Smash [l Revolut 3 Prioritiz A Llama0 @ ChatGF  \u00ae FreeCl @ Studen =& SortOs + O X\r\n\u00a9 & www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 [CHONRCN IRV I N REWUN = |\r\n\r\n() [INew folder\r\nGl ! ! e\r\n. Courses v  Tutorials v  Jobs v  Practice v  Contests v ee (o} ol | e\r\n8= P B Editorial R O Comments ey Average Time: 10m G\r\nB NN 7 N e A\r\n\r\nOutput Window X 7\r\n] \u2014 3\r\nA 9 class Solution {\r\n\r\nCompilation Results Custom Input Y.0.G.1. (Al Bot) kU public:\r\ney EE R void sort@12(vector<int>& arr) {\r\nk\u00a5l return sort(arr.begin(), arr.end());\r\n= Problem Solved Successfully & \u2018Suggest Feedback 13 s [\r\nEZ AT\r\nd i\r\n=1 QSR Y| Attempts : Correct / Total ;g\r\n18\r\n1111/1111 b FS\r\nL PL}\r\nAccuracy : 100% 21 \u00aeM// } Driver Code Ends\r\n\r\n| Time Taken\r\n\r\n0.2\r\nC] o You get marks only for the first correct submission if you solve the problem without viewing\r\nS the full solution.\r\n\r\nB\r\nox\r\n) Custom Input\r\n"
+            },
+            "timestamp": "2024-12-14T09:51:27.318565"
+        },
+        "coding ninjas": {
+            "filename": "22a81a6192_coding_ninjas_Screenshot_2024-12-13_223444.png",
+            "verified": true,
+            "verification_details": {
+                "manual_verification": true,
+                "verified_by": "admin",
+                "timestamp": "2024-12-31T12:34:25.615288"
+            },
+            "timestamp": "2024-12-14T10:20:21.088399"
+        },
+        "hackerearth": {
+            "filename": "22a81a6192_hackerearth_Screenshot_2024-12-13_222459.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "www.hackerearth.com/problem/algorithm/prime-numbers/",
+                "extracted_text": "\u00a9 Regex URL Val @ Free Textto Sy @ Chat Blackbox \u00ae voby Vercel @ HTML Previewer @ Login @ Student Dasht us Pangrams | Ha I Prime Numbers | Practice +\r\n< @ @ www.hackerearth.com/problem/algorithm/prime-numbers/ \u00a9 r >POl B\u00ae & L= =\r\n[J New folder\r\nm Problem\r\nGiven a number n, tell if it is a prime number. Print 1 if it is a prime number and print 0\r\nif the given number is not prime.\r\nInput :\r\nA single integer n.\r\nOutput :\r\n1, if the number is prime.\r\n0, if the number is not prime 14:1 vscode\r\nPrint a \\n after the answer. \u2014~ \u2014 \u201d\r\n( ) Test against custom input \u00a5 | Compile & Test code | Submit code\r\nConstraints : \u2014\r\n2<=n<=100\r\nSubmission ID: 104420038\r\n\u00ae . . | RESULT: @ Accepted\r\nScore Time (sec) Memory (KiB) Language\r\noa\r\nExplanation Input Result Time (sec) Memory (KiB) Score\r\nSince 5 is a prime number, the output is 1 Input #1 @Accepted 0.017648 2 25\r\nInput #2 @Accepted 0.025308 2880 25\r\nInput #3 @Accepted 0.016987 2 25\r\n"
+            },
+            "timestamp": "2024-12-14T10:40:18.233378"
+        },
+        "hackerrack": {
+            "filename": "22a81a6192_hackerrack_Screenshot_2024-12-13_221615.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "www.hackerrank.com/challenges/pangrams/problem",
+                "extracted_text": "\u00a9 Regex URL Validat @ Free Text to Spee: @ Chat Blackbox: Al \u00ae voby Vercel @ HTML Previewer @ Login @ Student Dashboard | ws Pangrams | HackerRank &\r\n\u00a9 @& www.hackerrank.com/challenges/pangrams/problem [OWA >POl B\u00ae & L= =\r\n[J New folder\r\n0 Cc tulati\r\nongratulations\r\nNextChallenge\r\nYou solved this challenge. Would you like to challenge your friends? [fw [I\r\n\u00a9 Test case O ~ .\r\nCompiler Message\r\nSuccess\r\n& Testcasel\r\n\u00a9 Testcase2 @ Input (stdin) Download\r\nWe promptly judged antique ivory buckles for the next prize\r\n\u00a9 Testcase3 &\r\nExpected Output Download\r\n@ Testcase 4d &\r\npangram\r\n[2]\r\n@ Testcase5 &\r\n.)\r\n@ Testcase 6 &\r\n"
+            },
+            "timestamp": "2024-12-14T10:46:09.953997"
+        },
+        "test_final": {
+            "filename": "22a81a6192_test_final_vbs_restdyfuwert_20241118_000703.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "\u00a9 \u00ae HTMLE 5c Practice oc Sum of | sorts anc \u20ac) vbs-01  @ vbs.mc  \u00a5 Smash. [Bl Revolut 3 Prioritiz A Llama0 @ ChatGF wm FreeCl @ Studen \u00b0c SortOs + QQ \u2014 Xx\r\n< >cC & www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 QReOrREOE>V| Ea sm =|\r\n\r\n() [J New folder\r\n[=] : . 27\r\no Courses v Tutorials v Jobs v Practice v Contests v Q Jira}\r\na = <I> Problem B Editorial \u00ae Submissions \u00a9 Comments [cr igs. | Average Time: 10m [EsunTmerg) OF & O x\r\n= 1\u00bb EE// } Driver Code Ends\r\n\r\nOutput Window X 7\r\n[] \u2014 8\r\nA 9 class Solution {\r\n\r\nCompilation Results Custom Input Y.0.G.1. (Al Bot) 10 public:\r\nBo 11+ void sort@12(vector<int>& arr) {\r\n12 return sort(arr.begin(), arr.end());\r\n= Problem Solved Successfully Suggest Feedback 13 } [\r\n14 };\r\n[a 15\r\n= Test Cases Passed Attempts : Correct / Total fs\r\np 18\r\n1111/1111 2/2 fs\r\ni 20\r\nAccuracy : 100% 21 \u00aeW// } Driver Code Ends\r\n\r\nLJ Time Taken\r\n\r\n0.2\r\nLJ)\r\nC] \u00b0 You get marks only for the first correct submission if you solve the problem without viewing\r\n> the full solution.\r\n\r\nSolve Next\r\nox\r\nco) Custom Input\r\n"
+            },
+            "timestamp": "2024-12-14T10:46:57.757246"
+        }
+    },
+    "22a81a6186": {
+        "test3_leetcode": {
+            "filename": "22a81a6186_test3_leetcode_karthikeya.kingler18gmail.com_test3_leetcode_Screenshot_2024-12-12_201901_1.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/",
+                "extracted_text": "e e Student Dashboard b PRGNS U TN ST Je SR 26 Sort 0s, 1s and 2s | Practice | G X 26 Sort 0s, 1s and 2s | Practice | Ge = X 26 GfG 160 - 160 Days of Problem X + - =l X\r\n& 5 C % leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/ * O @ :\r\n] 3 All Bookmarks.\r\n(=R TR & PR \u00aeswmt \u00a9 O B @ Oo @ Pemim\r\n|| Description | [T Editorial | Solutions | \u2018D Submissions 3 < | \u00a2/>Code HHEEY\r\nREIEY [ETNCTCYe S T (Ve \\Se LRV W7 oY =N OO\r\nAccepted 1 class Solution { B\r\nP!\r\nNov 10, 2024 \u2014 SLLS L 2 public int strStr(String haystack, String needle) {\r\nE\r\nP int haylength = haystack.length();\r\n5 int needlelength = needle.length();\r\n6\r\nb for(int i =@; i<= haylength - needlelength;i++){\r\n] if (haystack.substring(i, i + needlelength).equals(needle)) {\r\n) [T\r\n10 \u00a5\r\nEES 3\r\ni3 return -1;\r\n13 3\r\n[V\r\nRestored from local @ Upgrade to Cloud Saving DN E]\r\nTestcase = Test Result\r\nCase1 Case 2\r\nhaystack =\r\n\"sadbutsad\"\r\nneedle =\r\n1 \u00bb | NG\r\n21\u00b0c ] N \u2019 NN PIaES\r\ngMostly LY [ 3 L/ | e i - ' . ' A @ AN RO o0 B\r\n"
+            },
+            "timestamp": "2024-12-13T10:19:38.734095"
+        },
+        "test0": {
+            "filename": "22a81a6186_test0_Screenshot_2024-12-14_165759.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "4 Cc A 2% geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 lal [HER VPN =\r\n# Brave isn't your default browser Set as default PS\r\nSALE \u00b0\r\nCourses vv Tutorials vv Jobs v Practice v Contests v oS Q \u00a9 Q [5] Z\r\n= </> Problem @ Editorial \u00a9 Submissions \u00a2O Comments C++ (g++ 5.4) Average Time: 10m\r\n) 1\u00bb @3// } Driver Code Ends\r\nOutput Window ) 4 7 + class Solution {\r\n\u2014 8 public:\r\n9~ void sort@l2(vector<int>& a) {\r\nCompilation Results Custom Input Y.0.G.I. (Al Bot) 10 // code here\r\n- 11 sort(a.begin(),a.end());\r\n12 }\r\nProblem Solved Successfully @ Suggest Feedback 13}; ms\r\n14 []\r\n15\r\nTest Cases Passed Attempts : Correct / Total 1c Wasi lCod FS\r\n1111/1111 4/5\r\nAccuracy : 80%\r\n(4p)\r\nTime Taken\r\n0.3\r\no You get marks only for the first correct submission if you solve the problem without viewing the\r\nfull solution.\r\nSolve Next\r\nSort by Absolute Difference Sort Unsorted Subarray\r\nMinimum steps to make product equal to one\r\n_\u2014 | = Cu a\r\n"
+            },
+            "timestamp": "2024-12-14T17:12:37.536764"
+        },
+        "test1": {
+            "filename": "22a81a6186_test1_Screenshot_2024-12-14_164536.png",
+            "verified": null,
+            "verification_details": {
+                "verified": null,
+                "link_matched": null,
+                "problem_solved": true,
+                "extracted_link": null,
+                "extracted_text": "\u00a9] \u00a9 'www.geeksforgeeks.org r 4 3 v= (XO of\r\nSALE\r\nCourses vv Tutorials vv Jobs v Practice v Contests v a Tad Q (E JAN +: R\r\n= </> Problem B Editorial \u00a9 Submissions \u00a2O Comments Java (1.8) - Average Time: 10m\r\n) 1\u00bb @&// } Driver Code Ends\r\nOutput Window x 32+ class Solution {\r\n\u2014 33 // Function to sort an array of @s, 1s, and 2s\r\n34 ~ public void sort@12(int[] arr) {\r\nCompilation Results Custom Input Y.0.G.l. (Al Bot) 35 Arrays.sort(arr);\r\n36 }\r\n37 }\r\nProblem Solved Successfully @ Suggest Feedback 38 [@&// } Driver Code Ends =\r\nTest Cases Passed Attempts : Correct / Total\r\n1111/1111 3/4\r\nAccuracy : 75%\r\nTime Taken (4p)\r\n2.09\r\no You get marks only for the first correct submission if you solve the problem without viewing the\r\nfull solution.\r\nSolve Next\r\nSort by Absolute Difference Convert an array to reduced form\r\nMinimum steps to make product equal to one\r\nKick start your career with GfG 160! (> ]\r\n"
+            },
+            "timestamp": "2024-12-14T16:45:59.599968"
+        },
+        "hackerrack": {
+            "filename": "22a81a6186_hackerrack_Screenshot_2024-12-14_170055.png",
+            "verified": null,
+            "verification_details": {
+                "verified": null,
+                "link_matched": null,
+                "problem_solved": true,
+                "extracted_link": null,
+                "extracted_text": "ae Even =\r\n\r\n\u00ae Brave isn't your default browser Set as default X\r\n\r\nSALE PY\r\n\r\nCourses v Tutorials v Jobs vv Practice v Contests v a Tad Q (& Q [5] 4\r\n\r\n= </> Problem @ Editorial \u00ae Submissions \u00a2 Comments C++ (g++ 5.4) Average\r\n\r\nTime: 1@m | \u00a9 start Timer @|\r\n\r\n| 1\u00bb @3// } Driver Code Ends\r\n\r\nOutput Window x 7+ class Solution {\r\n\r\n\u2014 8 public:\r\n\r\n9~ void sort@l2(vector<int>& a) {\r\n\r\nCompilation Results 10 // code here\r\n\r\n- 11 sort(a.begin(),a.end());\r\n\r\n12 }\r\n\r\nProblem Solved Successfully @ Suggest Feedback 13}; [A\r\n\r\n14 L\r\n\r\n15\r\n\r\nTest Cases Passed Attempts : Correct / Total 1c W/apenelCod RFS\r\n\r\n1111/1111 4/5\r\n\r\nAccuracy : 80%\r\n\r\n(4p)\r\n\r\nTime Taken\r\n\r\n0.3\r\n\r\no You get marks only for the first correct submission if you solve the\r\n\r\nproblem without viewing the\r\n\r\nfull solution.\r\n\r\nSolve Next\r\n\r\nSort by Absolute Difference Sort Unsorted Subarray\r\n\r\nMinimum steps to make product equal to one\r\n\r\n\u2014\u2014 | =cua-=3\r\n\r\nSubmission Result: dashboard:1159\r\n{extracted Link: 'geeksforgeeks.org/problems/sort-an-array-of-0s-1s-an\r\n\r\n> d-2s4231/1', extracted text: '< Cc [J = geeksforgeeks.org/problems/sor\r\nt-an-array..s to make product equal to one\\r\\n\u2014\u2014 [ = cu a =3\\r\\n', Lin\r\nk_matched: false, problem solved: true, verified: false}\r\n\r\nSubmission Result: dashboard:1159\r\n{extracted Link: 'geeksforgeeks.org/problems/sort-an-array-of-0s-1s-an\r\n\r\n> d-2s4231/1', extracted text: '< Cc [J = geeksforgeeks.org/problems/sor\r\nt-an-array..s to make product equal to one\\r\\n\u2014\u2014 [ = cu a =3\\r\\n', Lin\r\nk_matched: false, problem solved: true, verified: false}\r\n\r\nNavigated to http://68.233.118.86/student/dashboard\r\n\r\nA \u00bbcdn.tailwindcss.com should not be used in production. To (index) :64\r\nuse Tailwind CSS in production, install it as a PostCSS plugin or use the\r\nTailwind CLI: https://tailwindcss.com/docs/installation\r\n"
+            },
+            "timestamp": "2024-12-14T17:01:32.720174"
+        }
+    },
+    "22a81a6101": {
+        "test0": {
+            "filename": "22a81a6101_test0_karthikeya.kingler18gmail.com_test0_Screenshot_2024-12-14_171632.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "v @ Student Dashboard X Yoy O BT Ts P2 o Tot i ol CTRRD 4 @ Student Details - DSA Problem X @ 22a81a6186_hackerrack_Screer X @ 22a81a6186_test0_Screenshot . X -+ = [m] X\r\n& > C 2% geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 [ \u00a2 b} [\r\nS 3 All Bookmarks\r\nCourses v  Tutorials v Jobs v  Practice v  Contests v ee Q (# N G \u00b0\r\nE <[> Problem @ Editorial (\u00ae Submissions O Comments Java (18) Average Time: 10m \u2018 DIES T 1 T T @\u2019 O & O %\r\n1 ==\r\nOutput Window % 32\r\ne EE\r\n34 - class Solution {\r\n(T BT L EHTLE Custom Input AN ANV \\N:Te1d) ELY\r\nR \u00a3 public void sort@12(int[] arr) {\r\n37\r\nProblem Solved Successfully < Suggest Feedback 38 Arrays.sort(arr); \u00ae\r\n39\r\n40 }\r\nTest Cases Passed Attempts : Correct / Total 41}\r\n42 E=\r\n1111/1111 2/3\r\nAccuracy : 66%\r\nLN CRELGD\r\n2.12\r\no You get marks only for the first correct submission if you solve the problem without viewing\r\nthe full solution.\r\n\u00ae i (i ()\r\n\u00a3l T ] o \u2018 ENG 17:16\r\n\u2018Haze mm Q Search M LI/ - e i \u2018 ' . @ N DO 000 &\r\n"
+            },
+            "timestamp": "2024-12-14T20:42:20.724789"
+        },
+        "coding ninjas": {
+            "filename": "22a81a6101_coding_ninjas_Screenshot_2024-12-14_204337.png",
+            "verified": true,
+            "verification_details": {
+                "manual_verification": true,
+                "verified_by": "admin",
+                "timestamp": "2024-12-31T12:34:25.615288"
+            },
+            "timestamp": "2024-12-14T20:44:33.187394"
+        },
+        "test1": {
+            "filename": "22a81a6101_test1_Screenshot_2024-12-14_204650.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "[, JEEVCT < WoTe: SN G NN e ETCNN | IR E  JICIRUUN - JoT-- R o VL ESI < B T) \u00a2 VIR el 3Dtrar @ Studer & Howtc @ Stude SortOs,1sar & Highe: +\r\n(@ & www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 CHONCAEG > QO B Q9 & L% =\r\n[J New folder\r\nSALE\r\nCourses v  Tutorials v Jobs &  Practice v  Contests v ee Q G @ [A]s] B\r\n1l\r\nE <[> Problem @ Editorial (@\u00ae Submissions O Comments Java (18) ~ Average Time: 10m |\u00ae Start Timer \u00ae|\r\nI |\r\nMy Submissions All Submission =\r\ny A B Solution {\r\n- 34\r\nEL) sort012( [1 arr) {\r\n& Refresh E1S)\r\n37 Arrays.sort(arr);\r\nTime (IST) Status Marks Lang TestCases Code 38\r\n39\r\n2024-12-12 21:18:18 Correct 0 java 1111/1111  View 40 }\r\n41\r\n2024-12-12 21:17:52 Time Limit Exceeded 0 java 1110/1111  View 42\r\n43\r\n2024-11-17 15:25:31 Correct 0 cpp  1111/1111  View 44\r\n45\r\n2024-11-04 22:54:25 Correct 2 cpp  1111/1111  View afp\r\n- : \u00a2 L -\r\n"
+            },
+            "timestamp": "2024-12-14T20:47:16.947438"
+        },
+        "test3_leetcode": {
+            "filename": "22a81a6101_test3_leetcode_Screenshot_2024-12-14_204650.png",
+            "verified": false,
+            "verification_details": {
+                "verified": false,
+                "link_matched": false,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "- JLEVCIE< Welo: 8% \u00ae chatc () Free T @ hayth @& Open \u00ae unuse @ HTML \u00ae Highe 3Dtrar @ Stude S Howte @ Stude Sort 0s, 1s a \u00ae Highe: +\r\n\r\n@ @& www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 [CHON-AC] >Ol B &L =\r\n[J New folder\r\n\r\nSALE\r\n\r\nCourses v  Tutorials v Jobs v  Practice v  Contests v ee Q & @ [+}:] B\r\nm\r\n= </>Problem B Editorial \u00a9 Submissions O Comments Java (18) Average Time: 10m (@ start Timer \u00ae)\r\n[\r\nissi All Submissions\r\nMy Submissions All Submission class Solution {\r\npublic void sorte12(int[] arr) {\r\nA pofrech\r\n& Refresh\r\nArrays.sort(arr);\r\n\r\nTime (IST) Status Marks Lang TestCases Code \ufb02\r\n\r\n2024-12-12 21:18:18 Correct 0? java 1111/1111 View N }\r\n\r\n2024-12-12 21:17:52 Time Limit Exceeded 0 java 1110/1111 View\r\n\r\n2024-11-17 15:25:31 Correct 0? cpp  1111/1111 View\r\n\r\n[\r\n2024-11-04 22:54:25 Correct 2 cpp  1111/1111  View 4>\r\nL)\r\nEes custom input [ Submit\r\n"
+            },
+            "timestamp": "2024-12-14T20:49:17.820747"
+        }
+    },
+    "22a81a6102": {
+        "test0": {
+            "filename": "22a81a6102_test0_Screenshot_2024-12-14_204650.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "- JLEVCIE< Welo: 8% \u00ae chatc () Free T @ hayth @& Open \u00ae unuse @ HTML \u00ae Highe 3Dtrar @ Stude S Howte @ Stude Sort 0s, 1s a \u00ae Highe: +\r\n\r\n@ @& www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 [CHON-AC] >Ol B &L =\r\n[J New folder\r\n\r\nSALE\r\n\r\nCourses v  Tutorials v Jobs v  Practice v  Contests v ee Q & @ [+}:] B\r\nm\r\n= </>Problem B Editorial \u00a9 Submissions O Comments Java (18) Average Time: 10m (@ start Timer \u00ae)\r\n[\r\nissi All Submissions\r\nMy Submissions All Submission class Solution {\r\npublic void sorte12(int[] arr) {\r\nA pofrech\r\n& Refresh\r\nArrays.sort(arr);\r\n\r\nTime (IST) Status Marks Lang TestCases Code \ufb02\r\n\r\n2024-12-12 21:18:18 Correct 0? java 1111/1111 View N }\r\n\r\n2024-12-12 21:17:52 Time Limit Exceeded 0 java 1110/1111 View\r\n\r\n2024-11-17 15:25:31 Correct 0? cpp  1111/1111 View\r\n\r\n[\r\n2024-11-04 22:54:25 Correct 2 cpp  1111/1111  View 4>\r\nL)\r\nEes custom input [ Submit\r\n"
+            },
+            "timestamp": "2024-12-14T20:50:12.206687"
+        },
+        "test1": {
+            "filename": "22a81a6102_test1_karthikeya.kingler18gmail.com_test0_Screenshot_2024-12-14_171632.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "v @ Student Dashboard X Yoy O BT Ts P2 o Tot i ol CTRRD 4 @ Student Details - DSA Problem X @ 22a81a6186_hackerrack_Screer X @ 22a81a6186_test0_Screenshot . X -+ = [m] X\r\n& > C 2% geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 [ \u00a2 b} [\r\nS 3 All Bookmarks\r\nCourses v  Tutorials v Jobs v  Practice v  Contests v ee Q (# N G \u00b0\r\nE <[> Problem @ Editorial (\u00ae Submissions O Comments Java (18) Average Time: 10m \u2018 DIES T 1 T T @\u2019 O & O %\r\n1 ==\r\nOutput Window % 32\r\ne EE\r\n34 - class Solution {\r\n(T BT L EHTLE Custom Input AN ANV \\N:Te1d) ELY\r\nR \u00a3 public void sort@12(int[] arr) {\r\n37\r\nProblem Solved Successfully < Suggest Feedback 38 Arrays.sort(arr); \u00ae\r\n39\r\n40 }\r\nTest Cases Passed Attempts : Correct / Total 41}\r\n42 E=\r\n1111/1111 2/3\r\nAccuracy : 66%\r\nLN CRELGD\r\n2.12\r\no You get marks only for the first correct submission if you solve the problem without viewing\r\nthe full solution.\r\n\u00ae i (i ()\r\n\u00a3l T ] o \u2018 ENG 17:16\r\n\u2018Haze mm Q Search M LI/ - e i \u2018 ' . @ N DO 000 &\r\n"
+            },
+            "timestamp": "2024-12-14T21:01:26.110121"
+        },
+        "test3_leetcode": {
+            "filename": "22a81a6102_test3_leetcode_karthikeya.kingler18gmail.com_test3_leetcode_Screenshot_2024-12-12_201901_1.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/",
+                "extracted_text": "v e Student Dashboard x > Find the Index of the First Occ. X 2 Sort 0s, 1s and 2s | Practice | Ge = X \u00bb& Sort Os, 1s and 2s | Practice | Ge = X & GfG 160 - 160 Days of Problen X Ed - [=] X\r\n& 5 C % leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/ * O @ :\r\n88 | 3 AllBookmarks\r\n& = Problemlist < > \u00a2 % PRn &\u00aeswmit @ O B B Oo @ Pemun\r\n\u2018 Description Editorial Solutions | \u201cD Submissions B Q \u2018 Code SRS\r\nStatus v Language v Runtime Memory Notes | Javav @ Auto AR L I\r\nAccepted 1 class Solution { |\r\nJava\r\nNov 10, 2024 Ooms Baroms 2 public int strStr(String haystack, String needle) {\r\nEl\r\na int haylength = haystack.length();\r\nB int needlelength = needle.length();\r\n3\r\n7 for(int i =0; i<= haylength - needlelength;i++){\r\n8 if (haystack.substring(i, i + needlelength).equals(needle)) {\r\nEl return i;\r\n10 1\r\n11 1\r\n12 return -1;\r\nFE] b\r\n14 3}\r\nRestored from local @ Upgrade to Cloud Saving Ln1,Col 1\r\nTestcase QSN\r\nCase1 Case2\r\nhaystack =\r\nREEL LR\r\nneedle =\r\n. I\r\n27\u00b0c m o \u2019 ENG o 20118\r\ngMoslly clear mm  Q Search #(\" \u2014 o \u2018 ! (. i [ ' . ' \u2018A @ s u o \u00ae 1220 &\r\n"
+            },
+            "timestamp": "2024-12-14T20:51:05.713628"
+        },
+        "test_final": {
+            "filename": "22a81a6102_test_final_karthikeya.kingler18gmail.com_test0_Screenshot_2024-12-14_171632.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+                "extracted_text": "v @ Student Dashboard X Yoy O BT Ts P2 o Tot i ol CTRRD 4 @ Student Details - DSA Problem X @ 22a81a6186_hackerrack_Screer X @ 22a81a6186_test0_Screenshot . X -+ = [m] X\r\n& > C 2% geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1 [ \u00a2 b} [\r\nS 3 All Bookmarks\r\nCourses v  Tutorials v Jobs v  Practice v  Contests v ee Q (# N G \u00b0\r\nE <[> Problem @ Editorial (\u00ae Submissions O Comments Java (18) Average Time: 10m \u2018 DIES T 1 T T @\u2019 O & O %\r\n1 ==\r\nOutput Window % 32\r\ne EE\r\n34 - class Solution {\r\n(T BT L EHTLE Custom Input AN ANV \\N:Te1d) ELY\r\nR \u00a3 public void sort@12(int[] arr) {\r\n37\r\nProblem Solved Successfully < Suggest Feedback 38 Arrays.sort(arr); \u00ae\r\n39\r\n40 }\r\nTest Cases Passed Attempts : Correct / Total 41}\r\n42 E=\r\n1111/1111 2/3\r\nAccuracy : 66%\r\nLN CRELGD\r\n2.12\r\no You get marks only for the first correct submission if you solve the problem without viewing\r\nthe full solution.\r\n\u00ae i (i ()\r\n\u00a3l T ] o \u2018 ENG 17:16\r\n\u2018Haze mm Q Search M LI/ - e i \u2018 ' . @ N DO 000 &\r\n"
+            },
+            "timestamp": "2024-12-14T21:02:55.546570"
+        },
+        "hackerrack": {
+            "filename": "22a81a6102_hackerrack_Screenshot_2024-08-22_203141.png",
+            "verified": false,
+            "verification_details": {
+                "verified": false,
+                "link_matched": false,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/twisted-prime-number0500/1",
+                "extracted_text": "(\u00a9) O] [5 [5 Operius [5 V20 Al and Al&M Problem Links Su x Claude [ ] Sum or Product - ~~ Twisted Prime Number | \u00a9 =< The amazing nun = Sum of primes | + Q a X\r\n(NN \u00bb C & www.geeksforgeeks.org/problems/twisted-prime-number0500/1 OK oo > 0 | B \u00a9 &A LL OE |\r\noa [3 New folder\r\n=)\r\nCourses v Tutorials v Jobs v Practice v Contests v oO Q ES JANN (5)\r\nCd \u2014\r\n\u2014 </> Problem B Editorial (@\u00ae Submissions \u00a9 Comments Java (18) ~ EE & O =\r\no \u201d\r\n. 21\r\nB. Output Window XX 55) / User function Template for Java\r\n23 - class Solution {\r\no tatic bool i i int\r\nCompilation Results Custom Input fol ( diabetes)\r\nfg  \u2014\u2014 26 if(n==0 || n==1)\r\n27\r\n~ Problem Solved Successfully \u00a9 Suggest Feedback 28 \\ return false;\r\n29 }\r\n\u00ae 30 for(int i=2;i*i<=n;i++)\r\n. S18 {\r\nB Test Cases Passed Attempts : Correct / Total = if (n%i=-0)\r\n334s {\r\n= 12365/ 12365 | / 1 34 return false;\r\n35 }\r\nAccuracy : 100% 36 }\r\ni. 37 return true;\r\n38 }\r\n\u00ae 39 - int isTwistedPrime(int N) {\r\nPoints Scored @ Time Taken 40 int rev=o;\r\n> 11 int n=N;\r\n42 while(n!=0)\r\n\u2014 44 rev=rev*10+n%10;\r\nYour Total Score: 15 + a5 n=n/10;\r\n46\r\n\u00a9 a7 }\r\n\u00a34 solve Next 48 lta, && isprime(rev))\r\n49 -\r\n\u00a9] 50 return 1;\r\nSum of Digits Prime/Non-Prime Sophie Germain Prime Sum of primes os }\r\n2 53 return 0;\r\n54 }\r\n% 55 [J\r\noor Custom Input\r\n"
+            },
+            "timestamp": "2024-12-14T22:38:36.797844"
+        },
+        "hackerearth": {
+            "filename": "22a81a6102_hackerearth_karthikeya.kingler18gmail.com_test3_leetcode_Screenshot_2024-12-12_201901_1.png",
+            "verified": false,
+            "verification_details": {
+                "verified": false,
+                "link_matched": false,
+                "problem_solved": true,
+                "extracted_link": "leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/",
+                "extracted_text": "v  @ Student Dashboard xX = Find the Index of the First Occu. X 26 Sort 0s, 1s and 2s | Practice | Ge X 26 Sort Os, 1s and 2s | Practice | Ge X 26 GfG 160 - 160 Days of Problem X + a [m] X\r\n\u20ac > C 25 leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/ * bo \u00ae :\r\noo | [3 All Bookmarks\r\n& = Problemlist < > 32 % PRin \u00aeDswbmit \u00a9 0O BB \u00a9 Oo Fs Premium\r\nDescription | [I] Editorial | = Solutions | \u201c0 Submissions HEHE </> Code HH\r\nStatus Language Vv Runtime Memory Notes \u00a9 Java @ Auto =Q O9D 2\r\nAccepted 1 class Solution { |\r\nJava\r\nNov 10, 2024 Ooms \u00ae416M8 2 public int strStr(String haystack, String needle) {\r\n3\r\n4 int haylength = haystack.length();\r\n5 int needlelength = needle.length();\r\n6\r\n7 for(int i =0; i<= haylength - needlelength;i++){\r\n8 if (haystack.substring(i, i + needlelength).equals(needle)) {\r\n9 return i;\r\n10 }\r\n11 }\r\n12 return -1;\r\n13 }\r\n14 }\r\nRestored from local & Upgrade to Cloud Saving Ln 1, Col 1\r\nTestcase = Test Result\r\nCase 1 Case 2\r\nhaystack =\r\n\"sadbutsad\"\r\nneedle =\r\nv\r\nEE /* Source \u00a9\r\n21\u00b0C mE \u2018a o C 4 ENG 20:18\r\n\u201c<9: clear mm Q Search \u00bb n O 3 p= (a) m [J e \u201dn a\" A \u00a9 pi dl \u00ae 10204 &\r\n"
+            },
+            "timestamp": "2024-12-14T22:20:49.399885"
+        },
+        "coding ninjas": {
+            "filename": "22a81a6102_coding_ninjas_karthikeya.kingler18gmail.com_test3_leetcode_Screenshot_2024-12-12_201901_1.png",
+            "verified": true,
+            "verification_details": {
+                "manual_verification": true,
+                "verified_by": "admin",
+                "timestamp": "2024-12-31T12:34:25.615288"
+            },
+            "timestamp": "2024-12-14T22:20:52.415503"
+        },
+        "encrypt-string": {
+            "filename": "22a81a6102_encrypt-string_vbs0_fcfgh_20241117_204658.png",
+            "verified": false,
+            "verification_details": {
+                "verified": false,
+                "link_matched": false,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/find-transition-point-1587115620/1",
+                "extracted_text": "FN \u2014\u2014\u2014\r\nJ & HTML Practi Sum \u00a2 Sort \u00a9 \u00a9 vbs-0 @ vbs_n \u00a5 Smas =| EV Impro A Llama @ ChatC . Free ( @ Stude Find Transitic Find T. + \u2014 4d \u2019\r\n@ @& www.geeksforgeeks.org/problems/find-transition-point-1587115620/1 @QORGGO> Q | BQ A&A YY m= |\r\n[3 New folder\r\nCourses vv Tutorials vv Jobs &v Practice v Contests wv = Q QC J\u201d [As] B\r\nm\r\n= </> Problem @ Editorial \u00ae Submissions OO Comments Java (18) ~ Average Time: 20m E Start Timer \u00ae|\r\n1\r\nOutput Window X 26\r\n\u2014 27\r\n28\r\n29\r\n5 30 Solution {\r\n31 transitionPoint( arr[]) {\r\nProblem Solved Successfully & 32\r\n33\r\n34 ( i=0j;i<arr.length;i++){\r\nTest Cases Passed Attempts : Correct / Total > (arrl?] )\r\n2\r\n1115/1115 3/3 . J\r\n38 5\r\nBm 39 }\r\n100% </> JET\r\n\u00a9 Time Taken\r\n0.49\r\nYou get marks only for the first correct submission if you solve the problem without viewing\r\noO\r\n~ the full solution.\r\nSolve Next\r\n= : Sl Compile & Run \u2014\u2014\r\n"
+            },
+            "timestamp": "2024-12-14T22:20:53.454145"
+        }
+    },
+    "karthikeyakonakalla18@gmail.com": {
+        "Maximum Occurring Element": {
+            "filename": "karthikeyakonakalla18gmail.com_Maximum_Occurring_Element_Screenshot_2024-12-30_223717.png",
+            "verified": true,
+            "verification_details": {
+                "verified": true,
+                "link_matched": true,
+                "problem_solved": true,
+                "extracted_link": "geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+                "extracted_text": "v @ Login ox @ Student Dashboard X ~\u00a2 Most Frequent Character | Prac X + = [m] X\r\n& > C 2 geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1 QQ bl} @ = \u00a7 rs :\r\na8 C3 All Bookmarks\r\nCourses vv Tutorials v Jobs v Practice v Contests v He Q 30% JA [43 (Kk ]\r\n\u2014 </> Problem @ Editorial @\u00ae Submissions \u00a9 Comments Java (18) ~ Average Time: 30m OE & OX\r\n1 ==\r\n~~ + a 23\r\nMy Submissions All Submissions pos\r\n25\r\n26 \u00a9 class Solution {\r\n\u00a3 Refresh 27\r\n28 public static char getMaxOccuringChar(String s) {\r\nTime (IST) Status Marks Lang Test Cases Code i } '\u00bb\r\n2024-11-08 20:42:13 Correct 1 java 50/50 View 31\r\n5] Custom Input Compile & Run submit\r\n23\u00b0C CT] o 4 ENG 22:37\r\n3 Clear mm Q Search iL. WO 5 Mm (o] o of LJ mn BY \u00a9 N DDD 000 &\r\n"
+            },
+            "timestamp": "2024-12-30T22:37:40.377098"
+        }
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('path/to/your/tilde-pattern.png') repeat; /* Replace with your tilde pattern */
+            background-color: #e6d0d0; /* Fallback color */
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full height */
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%; /* Make it responsive */
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .message {
+            background-color: #FFEDD5; /* bg-orange-100 */
+            border: 1px solid #FBBF24; /* border-orange-400 */
+            color: #B45309; /* text-orange-700 */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4B5563; /* text-gray-700 */
+        }
+
+        label {
+            display : block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #4B5563; /* text-gray-700 */
+        }
+
+        input {
+            width: calc(100% - 20px); /* Adjust width to prevent overflow */
+            padding: 10px;
+            border: 1px solid #D1D5DB; /* border-gray-300 */
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #F97316; /* bg-orange-500 */
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #EA580C; /* hover:bg-orange-700 */
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .signup a {
+            color: #F97316; /* text-orange-500 */
+            text-decoration: none;
+        }
+
+        .signup a:hover {
+            color: #EA580C; /* hover:text-orange-700 */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2> <!-- Added Login label -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="message">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <form method="POST" class="space-y-6">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="signup">
+        <p class="text-sm text-gray-600">
+            Don't have an account? 
+            <a href="{{ url_for('signup') }}">Sign up</a>
+        </p>
+    </div>
+</div>  <!--
+<div id="flash-message" class="flash">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="{{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+
+<script>
+    // Function to hide the flash message after 3 seconds
+    setTimeout(() => {
+        const flashMessage = document.getElementById('flash-message');
+        if (flashMessage) {
+            flashMessage.style.display = 'none'; // Hide the message after 3 seconds
+        }
+    }, 3000); // 3000 milliseconds = 3 seconds
+</script>  -->
+</body>
+</html>

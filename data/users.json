@@ -1,0 +1,136 @@
+{
+    "admin": {
+        "password": "scrypt:32768:8:1$RSboGDxUGdheIKEg$c43ce8d72df83de9e0e8759443319ea0f5f956d60983782fcb552b42b3923d8b972ee89bd1d30dbd19d80a22e55701bbb0f427d71ceb57362067b0eb3ab2c8f6",
+        "role": "admin"
+    },
+    "admin1": {
+        "password": "scrypt:32768:8:1$RSboGDxUGdheIKEg$c43ce8d72df83de9e0e8759443319ea0f5f956d60983782fcb552b42b3923d8b972ee89bd1d30dbd19d80a22e55701bbb0f427d71ceb57362067b0eb3ab2c8f6",
+        "role": "admin"
+    },
+    "23a85a6109": {
+        "password": "scrypt:32768:8:1$oWvS1w03m3OwvDzF$7bbbe63910088a24aa2d54e366b136d90ab468eb8b155e0f83f04d0c1a2791682e57e4ff4c50fe24e4653769ff2c2122b5055ee494424d1ce7326859d8d6e308",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "CST",
+        "section": "A"
+    },
+    "23a85a6111": {
+        "password": "scrypt:32768:8:1$MuDzfPfWYP6SA37f$415777c498729281fc22a0e3f88b38b9803bf98ac743864a114aafb80d694a5e0906492d150f47cd0a35808993fc64b0f9f5cb27867e83be39b0967a1568c62d",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "AIML",
+        "section": "B"
+    },
+    "22a81a6192": {
+        "password": "scrypt:32768:8:1$fzGhsPYGbDSzP9D6$a673bf3b02a6df0f520c51a3d4190c17d27a7f9a5f5eab02f3c949cdd4890081e70bbe9298f97ed4147a061a95a085d3807d9e9f2c34bef9393ceef49890411f",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "AIML",
+        "section": "B"
+    },
+    "22a81a6186": {
+        "password": "scrypt:32768:8:1$zPEnJA5fVmmC9T2q$3785b0586d2f71bc293abfeef1d875295c9e58fd00587197833eb7e9deae177f1155191bb74e4cb6542a801b3ada2228b58d85e2247a613c60f6c44540175d05",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "AIML",
+        "section": "B"
+    },
+    "karthikeya.kingler18@gmail.com": {
+        "password": "scrypt:32768:8:1$1FheenmWOr81ZzHE$776e02e71a53dc4834aa6a6255e378be562d05242a993b0f68f4464553d759112222e497289a4dbd4a40a4a96c9bc11987f236d9f7f979ed1eec0e9bd241d6c2",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "AIML",
+        "section": "A"
+    },
+    "22a81a0501": {
+        "password": "scrypt:32768:8:1$ZCG7Y9R7gNd5NbFt$7e5ed37f8f062b82902c1d8a4f95dd38bdba13ceb3c06cb5689e4955b26296c8cdda088533c23544a6f6853ae4341d02d48fa139818a43fe8ffb520b37853ed7",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "CSE",
+        "section": "A"
+    },
+    "22a81a0502": {
+        "password": "scrypt:32768:8:1$7WQGzzuzLLa1dD3o$0576c8956c294ea58e726c8e10a3b0581329544f946b7161c6c4b1d40114a54b011f370114c50ccbd4876c88f7ddd99a9fda3a75f6beae4c13a7229237386b8d",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "CSE",
+        "section": "A"
+    },
+    "22a81a0567": {
+        "password": "scrypt:32768:8:1$dqgDmLauqyLY0HlP$9dd1bfb4563fd442d3926ac8222d180dc7135bf562c125f39c1d8b8f925bdcb81b27d974dd97f5f7e903b993a1daa0cd92295b20f52598476e4f3ddf2e9d6bde",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "CSE",
+        "section": "B"
+    },
+    "22a81a05d1": {
+        "password": "scrypt:32768:8:1$PnfgK2d716QWXH20$7bfa1aa2326095c6fccca2c7ea21a3b0cdb44499cf579c818eb5a9f88aba7782a30dce93a967426d472f0be2569fef4cef60c0156e9ed356336634070fe24cda",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "CSE",
+        "section": "B"
+    },
+    "22a81a05d2": {
+        "password": "scrypt:32768:8:1$R1A9NqGy1Mo1HqYV$0589053a962a60dc7329b1d7e446c6112d24c377c77159440b537173fbf5260f44712e02029b5e9d88a4a3071685ff4bbd4a6ce93a19b0d165569f6687cba047",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "CSE",
+        "section": "B"
+    },
+    "22a81a0601": {
+        "password": "scrypt:32768:8:1$ifrRhubYMSJ7Rorw$e33c4cf6b752daa6c96adc93490355f8bbff368edd4733d3adaf1b850a61a903f6ceaadef89fcfce683e8dfb9730e5f8e156861475fb57e730f86a2d1fccb213",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "CST",
+        "section": "A"
+    },
+    "22a81a0602": {
+        "password": "scrypt:32768:8:1$NbpDgZ4tcyEPvqo6$f4befe39c16648560906acb85c5d81af9a138f9b6489566a514eb4205ad97dc006be133422fdde4cadd7bbf5984c6c8228a35e5b4d19faea8274002b08e99fb7",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "CST",
+        "section": "A"
+    },
+    "22a81a6101": {
+        "password": "scrypt:32768:8:1$0YFFvtpYgQ8dHtB3$93f267c6635293c861fb428cae2d8ae5543cf67dffb598417835b861582cba81af04a47dc8fe2160fafe111b62bb451a7f1c389b93e282ec615743db919e303c",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "AIML",
+        "section": "A"
+    },
+    "22a81a6102": {
+        "password": "scrypt:32768:8:1$W8wy2OriuUotZ8nd$cd5c84ea04cc661e92b06b4938ece20bd3da303383886d411dead8dc4088ab7e10bd67efcaa7f065cb26876a61a01deaa52bc742926c51352f08b86bb909edbe",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "AIML",
+        "section": "A"
+    },
+    "22a81a4302": {
+        "password": "scrypt:32768:8:1$2L1FH5hKsCiib1Y3$bfc8b639e56bca12693a052ee6f850e2a477a1da610bb04734faa59b9362e3b053c2866ddad06eae6ae98d9288c68385069f57a57e81a8cc3ab246bd26bdc22d",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "AI",
+        "section": "A"
+    },
+    "22a81a4367": {
+        "password": "scrypt:32768:8:1$qKD9oEwTAbZPJ4L5$6249ec6bb424ed405ab11e403c548f258bfd4eb0edb9d392b46d48b6712b64ec94404d71bd35599ccf44c65ed6d184a8d677d73e99b4b576af6d954f6ddfce2e",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "AI",
+        "section": "B"
+    },
+    "22a81a4368": {
+        "password": "scrypt:32768:8:1$mB17i6VW4Usv1EQv$e833260432ac654b42c63691e32e0189504db825ce3abcd13c6dd7b1c1cafb9b12cc5b721430508b4bb9a84ebd3d19293eede86c58603fd80c4c6833a54f061d",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "AI",
+        "section": "B"
+    },
+    "karthikeyakonakalla18@gmail.com": {
+        "password": "scrypt:32768:8:1$4YINYp4RiKU03ydC$ed77111f73ccff0dc2522f8b1d20b26693bf7cbf4922380f743a6a48ff82d7cb72ee75f67a25d433e2c03316e2e59187bf04f443bdb9bba51f46f72af467c79a",
+        "role": "student",
+        "year": "3rd Year",
+        "branch": "AIML",
+        "section": "B"
+    }
+}

@@ -1,0 +1,2198 @@
+{
+    "23a85a6109": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "23a85a6111": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a6192": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a6186": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "karthikeya.kingler18@gmail.com": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a0501": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a0502": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a0567": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a05d1": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a05d2": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a0601": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a0602": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a6101": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a6102": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a4302": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a4367": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "22a81a4368": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ],
+    "karthikeyakonakalla18@gmail.com": [
+        {
+            "title": "test0",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:46:50",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test1",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-11-25 17:47:00",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test3_leetcode",
+            "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1462294358/",
+            "assigned_date": "2024-11-25 17:47:33",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test_final",
+            "link": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+            "assigned_date": "2024-12-12 20:18:23",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerrack",
+            "link": "https://www.hackerrank.com/challenges/pangrams/problem",
+            "assigned_date": "2024-12-13 22:13:53",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "hackerearth",
+            "link": "https://www.hackerearth.com/problem/algorithm/prime-numbers/",
+            "assigned_date": "2024-12-13 22:31:59",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "coding ninjas",
+            "link": "https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382",
+            "assigned_date": "2024-12-13 22:32:30",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "encrypt-string",
+            "link": "https://www.geeksforgeeks.org/problems/encrypt-the-string-10337/1",
+            "assigned_date": "2024-12-14 17:01:14",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "penalty-shoot-out",
+            "link": "https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1",
+            "assigned_date": "2024-12-14 17:02:20",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Maximum Occurring Element",
+            "link": "https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1",
+            "assigned_date": "2024-12-30 22:32:02",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "Secret Message",
+            "link": "https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1",
+            "assigned_date": "2024-12-31 11:28:51",
+            "criteria": {
+                "year": "All Years",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        },
+        {
+            "title": "test00",
+            "link": "https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1",
+            "assigned_date": "2024-12-31 12:31:18",
+            "criteria": {
+                "year": "3rd Year",
+                "branch": "All Branches",
+                "section": "All Sections"
+            }
+        }
+    ]
+}

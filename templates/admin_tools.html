@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Tools</title>
+
+    <!-- Tailwind CSS with custom theme configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script>
+        // Tailwind custom theme configuration
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-orange': {
+                            50: '#FFF3E0',
+                            100: '#FFE0B2',
+                            500: '#FF6B35',
+                            600: '#FF5A1F',
+                            700: '#FF4500'
+                        },
+                        'dark-bg': {
+                            100: '#121212',
+                            200: '#1E1E1E',
+                            300: '#2C2C2C'
+                        },
+                        'led-green': '#4CAF50',
+                        'led-blue': '#2196F3',
+                        'led-red': '#F44336',
+                        'led-yellow': '#FFEB3B',
+                    }
+                }
+            }
+        }
+
+        let activeCard = null;
+
+        function toggleSection(sectionId, color) {
+            const section = document.getElementById(sectionId);
+            const card = document.getElementById(`${sectionId}-card`);
+
+            // Hide previously active section
+            if (activeCard && activeCard !== sectionId) {
+                document.getElementById(activeCard).classList.add('hidden');
+                document.getElementById(`${activeCard}-card`).classList.remove('border-4', 'border-' + activeCard.color);
+                document.getElementById(`${activeCard}-card`).classList.remove('glow');
+            }
+
+            // Toggle current section
+            section.classList.toggle('hidden');
+            card.classList.toggle('border-4', !section.classList.contains('hidden'));
+            card.classList.toggle('glow', !section.classList.contains('hidden'));
+            card.classList.toggle('border-' + color, !section.classList.contains('hidden'));
+
+            // Set active card
+            activeCard = sectionId;
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2C2C2C;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF6B35;
+            border-radius: 6px;
+        }
+        .dark-input {
+            background-color: #2C2C2C;
+            color: #ffffff;
+            border-color: #4A4A4A;
+        }
+        .glow {
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 5px rgba(255, 107, 53, 0.7);
+            }
+            100% {
+                box-shadow: 0 0 20px rgba(255, 107, 53, 1);
+            }
+        }
+
+        .file, .folder {
+            transition: background-color 0.3s;
+        }
+        .file:hover, .folder:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-dark-bg-100 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <a href="{{ url_for('admin_dashboard') }}" class="text-gray-600 hover:text-gray-900">
+                        ← Back to Dashboard
+                    </a>
+                    <h1 class="text-xl font-bold">Student Details: {{ username }}</h1>
+                </div>
+                <a href="{{ url_for('logout') }}" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                    Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-2xl font-bold mb-6">Admin Tools</h1>
+
+        <!-- Check for PIN -->
+        {% if not pin_verified %}
+            <h2 class="text-xl font-semibold mb-4">Enter Secret PIN</h2>
+            <form method="POST" class="mb-6">
+                <label for="pin" class="block mb-2">Secret PIN:</label>
+                <input type="text" id="pin" name="pin" required class="border rounded p-2 w-full dark-input">
+                <button type="submit" class="mt-2 bg-custom-orange-500 text-white px-4 py-2 rounded hover:bg-custom-orange-600 transition">Verify PIN</button>
+            </form>
+        {% else %}
+            <!-- Flash messages for feedback -->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul class="mb-4">
+                        {% for message in messages %}
+                            <li class="bg-green-100 text-green-700 px-4 py-2 rounded mb-2">{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+
+            <!-- Admin Tools Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+                <div id="changePinSection-card" class="bg-white dark:bg-dark-bg-200 p-4 rounded-lg shadow-md cursor-pointer transition-transform transform hover:scale-105" onclick="toggleSection('changePinSection', 'led-orange')">
+                    <h3 class="text-lg font-semibold">Change Secret PIN</h3>
+                    <p>Update the secret PIN for admin access.</p>
+                </div>
+                <div id="addStudentSection-card" class="bg-white dark:bg-dark-bg-200 p-4 rounded-lg shadow-md cursor-pointer transition-transform transform hover:scale-105" onclick="toggleSection('addStudentSection', 'led-blue')">
+                    <h3 class="text-lg font-semibold">Add New Student</h3>
+                    <p>Add a new student to the system.</p>
+                </div>
+                <div id="addUsersFromFileSection-card" class="bg-white dark:bg-dark-bg-200 p-4 rounded-lg shadow-md cursor-pointer transition-transform transform hover:scale-105" onclick="toggleSection('addUsersFromFileSection', 'led-green')">
+                    <h3 class="text-lg font-semibold">Add Users from File</h3>
+                    <p>Upload a file to add multiple users at once.</p>
+                </div>
+                <div id="addAdminSection-card" class="bg-white dark:bg-dark-bg-200 p-4 rounded-lg shadow-md cursor-pointer transition-transform transform hover:scale-105" onclick="toggleSection('addAdminSection', 'led-yellow')">
+                    <h3 class="text-lg font-semibold">Add New Admin</h3>
+                    <p>Create a new admin account.</p>
+                </div>
+                <div id="deleteUser Section-card" class="bg-white dark:bg-dark-bg-200 p-4 rounded-lg shadow-md cursor-pointer transition-transform transform hover:scale-105" onclick="toggleSection('deleteUser Section', 'led-red')">
+                    <h3 class="text-lg font-semibold">Delete User</h3>
+                    <p>Remove a user from the system.</p>
+                </div>
+                <div id="currentUsersSection-card" class="bg-white dark:bg-dark-bg-200 p-4 rounded-lg shadow-md cursor-pointer transition-transform transform hover:scale-105" onclick="toggleSection('currentUsersSection', 'led-orange')">
+                    <h3 class="text-lg font-semibold">Current Users</h3>
+                    <p>View the list of all users in the system.</p>
+                </div>
+            </div>
+
+            <!-- Change Secret PIN Section -->
+            <div id="changePinSection" class="hidden mb-6">
+                <h2 class="text-xl font-semibold mb-4">Change Secret PIN</h2>
+                <form method="POST">
+                    <label for="new_pin" class="block mb-2">New Secret PIN:</label>
+                    <input type="text" id="new_pin" name="new_pin" required class="border rounded p-2 w-full dark-input">
+                    <button type="submit" class="mt-2 bg-custom-orange-500 text-white px-4 py-2 rounded hover:bg-custom-orange-600 transition">Change PIN</button>
+                </form>
+            </div>
+
+            <!-- Add New Student Section -->
+            <div id="addStudentSection" class="hidden mb-6">
+                <h2 class="text-xl font-semibold mb-4">Add New Student</h2>
+                <form method="POST">
+                    <label for="new_student_id" class="block mb-2">Student ID:</label>
+                    <input type="text" id="new_student_id" name="new_student_id" required class="border rounded p-2 w-full dark-input">
+
+                    <label for="new_student_password" class="block mb-2">Password:</label>
+                    <input type="password" id="new_student_password" name="new_student_password" required class="border rounded p-2 w-full dark-input">
+
+                    <label for="year" class="block mb-2">Year:</label>
+                    <input type="text" id="year" name="year" required class="border rounded p-2 w-full dark-input">
+
+                    <label for="branch" class="block mb-2">Branch:</label>
+                    <input type="text" id="branch" name="branch" required class="border rounded p-2 w-full dark-input">
+
+                    <label for="section" class="block mb-2">Section:</label>
+                    <input type="text" id="section" name="section" required class ="border rounded p-2 w-full dark-input">
+
+                    <button type="submit" class="mt-2 bg-custom-orange-500 text-white px-4 py-2 rounded hover:bg-custom-orange-600 transition">Add Student</button>
+                </form>
+            </div>
+
+            <!-- Add Users from File Section -->
+            <div id="addUsersFromFileSection" class="hidden mb-6">
+                <h2 class="text-xl font-semibold mb-4">Add Users from File</h2>
+                <form method="POST" enctype="multipart/form-data">
+                    <label for="branch" class="block mb-2">Branch:</label>
+                    <select id="branch" name="branch" required class="border rounded p-2 w-full">
+                        {% for branch in branches %}
+                            <option value="{{ branch }}">{{ branch }}</option>
+                        {% endfor %}
+                    </select>
+
+                    <label for="year" class="block mb-2">Year:</label>
+                    <select id="year" name="year" required class="border rounded p-2 w-full">
+                        {% for year in years %}
+                            <option value="{{ year }}">{{ year }}</option>
+                        {% endfor %}
+                    </select>
+
+                    <label for="section" class="block mb-2">Section:</label>
+                    <select id="section" name="section" required class="border rounded p-2 w-full">
+                        {% for section in sections %}
+                            <option value="{{ section }}">{{ section }}</option>
+                        {% endfor %}
+                    </select>
+
+                    <label for="default_password" class="block mb-2">Default Password:</label>
+                    <input type="password" id="default_password" name="default_password" required class="border rounded p-2 w-full">
+
+                    <label for="file" class="block mb-2">Upload Roll Numbers File:</label>
+                    <input type="file" id="file" name="file" accept=".txt,.json" required class="border rounded p-2 w-full">
+
+                    <button type="submit" class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition">Add Users</button>
+                </form>
+            </div>
+
+            <!-- Add New Admin Section -->
+            <div id="addAdminSection" class="hidden mb-6">
+                <h2 class="text-xl font-semibold mb-4">Add New Admin</h2>
+                <form method="POST">
+                    <label for="new_admin_id" class="block mb-2">Admin ID:</label>
+                    <input type="text" id="new_admin_id" name="new_admin_id" required class="border rounded p-2 w-full dark-input">
+
+                    <label for="new_admin_password" class="block mb-2">Password:</label>
+                    <input type="password" id="new_admin_password" name="new_admin_password" required class="border rounded p-2 w-full dark-input">
+
+                    <button type="submit" class="mt-2 bg-custom-orange-500 text-white px-4 py-2 rounded hover:bg-custom-orange-600 transition">Add Admin</button>
+                </form>
+            </div>
+ <!-- Delete User Section -->
+            <div id="deleteUser Section" class="hidden mb-6">
+                <h2 class="text-xl font-semibold mb-4">Delete User</h2>
+                <form method="POST">
+                    <label for="user_to_delete" class="block mb-2">User  ID:</label>
+                    <input type="text" id="user_to_delete" name="user_to_delete" required class="border rounded p-2 w-full dark-input">
+                    <button type="submit" class="mt-2 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Delete User</button>
+                </form>
+            </div>
+
+            <!-- Current Users Section -->
+            <!-- Current Users Section -->
+<div id="currentUsersSection" class="hidden mb-6">
+    <h2 class="text-xl font-semibold mb-4">Current Users</h2>
+
+    <!-- Sort Options -->
+    <div class="mb-4 flex justify-between items-center">
+        <div>
+            <label for="sort" class="mr-2">Sort by:</label>
+            <select id="sort" class="border rounded p-2" onchange="sortUsers()">
+                <option value="id">User  ID</option>
+                <option value="role">Role</option>
+            </select>
+        </div>
+        <button id="deleteSelected" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition" onclick="deleteSelectedUsers()">Delete Selected</button>
+    </div>
+
+    <table class="min-w-full bg-white border border-gray-300">
+        <thead>
+            <tr>
+                <th class="border-b-2 border-gray-300 px-4 py-2">
+                    <input type="checkbox" id="selectAll" onclick="toggleSelectAll(this)">
+                </th>
+                <th class="border-b-2 border-gray-300 px-4 py-2">User  ID</th>
+                <th class="border-b-2 border-gray-300 px-4 py-2">Role</th>
+                <th class="border-b-2 border-gray-300 px-4 py-2">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            {% for user_id, user_info in users.items() %}
+                <tr>
+                    <td class="border-b border-gray-300 px-4 py-2">
+                        <input type="checkbox" class="user-checkbox" value="{{ user_id }}">
+                    </td>
+                    <td class="border-b border-gray-300 px-4 py-2">{{ user_id }}</td>
+                    <td class="border-b border-gray-300 px-4 py-2">{{ user_info.role }}</td>
+                    <td class="border-b border-gray-300 px-4 py-2">
+                        <button class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 transition" onclick="manageUser ('{{ user_id }}')">Manage</button>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+</div>
+
+<!-- File Management Card -->
+<div id="fileManagementCard" class="bg-white dark:bg-dark-bg-200 p-4 rounded-lg shadow-md mb-6 cursor-pointer" onclick="toggleSection('fileManagementContent')">
+    <h2 class="text-xl font-semibold">
+        File Management
+        <i class="fas fa-chevron-down float-right"></i>
+    </h2>
+</div>
+<div id="fileManagementContent" class=" mt-4">
+    <!-- File Upload Card -->
+    <div class="mb-4">
+        <h3 class="text-lg font-semibold mb-2">Upload File</h3>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="upload_file" class="block mb-2">Select File:</label>
+            <input type="file" id="upload_file" name="upload_file" required class="border rounded p-2 w-full">
+            <input type="hidden" name="folder_path" value="{{ current_path }}">
+            <button type="submit" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Upload</button>
+        </form>
+    </div>
+
+    <!-- Navigation for Directories -->
+    <div class="mb-4">
+        <a href="{{ url_for('admin_tools', path=parent_path) }}" class="text-blue-500 hover:underline">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <span class="ml-4 text-gray-700">Current Path: {{ current_path }}</span>
+    </div>
+
+   <!-- List of Directories -->
+<h3 class="text-lg font-semibold mb-2">Directories</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+    {% for directory in directories %}
+        <div class="folder bg-yellow-200 p-4 rounded shadow text-center flex flex-col items-center justify-center">
+            <a href="{{ url_for('admin_tools', path=current_path + '/' + directory) }}" class="flex flex-col items-center">
+                <i class="fas fa-folder fa-2x"></i>
+                <span class="mt-2 truncate max-w-full overflow-hidden text-ellipsis whitespace-nowrap">{{ directory }}</span>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+<!-- List of Files -->
+<h3 class="text-lg font-semibold mb-2">Files</h3>
+<form method="POST" action="{{ url_for('delete_files') }}">
+    <input type="hidden" name="current_path" value="{{ current_path }}">
+
+    <div class="flex items-center mb-4" id="select-all-container" style="display: {% if files|length > 1 %}block{% else %}none{% endif %};">
+        <input type="checkbox" id="select_all" onclick="toggleSelectAll(this)">
+        <label for="select_all" class="ml-2">Select All</label>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {% for file in files %}
+            <div class="file bg-blue-200 p-4 rounded shadow text-center flex flex-col items-center justify-center">
+                <input type="checkbox" name="files_to_delete" value="{{ file }}" class="file-checkbox hidden">
+                <a href="{{ url_for('download_file', file_path=current_path + '/' + file) }}" class="flex flex-col items-center h-full w-full">
+                    <i class="fas fa-file fa-2x"></i>
+                    <span class="mt-2 truncate max-w-full overflow-hidden text-ellipsis whitespace-nowrap">{{ file }}</span>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <button type="submit" class="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Delete Selected Files</button>
+</form>
+</div>
+
+
+
+
+
+        {% endif %}
+    </div>
+
+    <!-- Clear Students Button
+    <form action="{{ url_for('clear_students') }}" method="POST" class="mb-8">
+        <button type="submit" onclick="return confirm('Are you sure? This will delete ALL student data!')" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+            Clear All Students
+        </button>
+    </form>  -->
+</body>
+<script>
+    let activeSection = null;
+
+    function toggleSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.classList.toggle('hidden');
+    }
+    function toggleSelectAll(selectAllCheckbox) {
+        const checkboxes = document.querySelectorAll('.user-checkbox');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = selectAllCheckbox.checked;
+        });
+    }
+
+    function deleteSelectedUsers() {
+        const selectedUsers = Array.from(document.querySelectorAll('.user-checkbox:checked')).map(checkbox => checkbox.value);
+        if (selectedUsers.length > 0) {
+            // Implement the delete logic here (e.g., send a request to the server)
+            console.log('Deleting users:', selectedUsers);
+            // You can also add a confirmation dialog before deletion
+        } else {
+            alert('No users selected for deletion.');
+        }
+    }
+
+    function sortUsers() {
+        const sortValue = document.getElementById('sort').value;
+        const rows = Array.from(document.querySelectorAll('#userTableBody tr'));
+        rows.sort((a, b) => {
+            const aValue = sortValue === 'id' ? a.cells[1].innerText : a.cells[2].innerText;
+            const bValue = sortValue === 'id' ? b.cells[1].innerText : b.cells[2].innerText;
+            return aValue.localeCompare(bValue);
+        });
+        const tbody = document.getElementById('userTableBody');
+        tbody.innerHTML = '';
+        rows.forEach(row => tbody.appendChild(row));
+    }
+
+    function manageUser (userId) {
+        // Implement the logic to manage the user (e.g., open a modal to edit user details)
+        console.log('Managing user:', userId);
+    }
+
+    function toggleSelectAll(selectAllCheckbox) {
+        const checkboxes = document.querySelectorAll('.file-checkbox');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = selectAllCheckbox.checked;
+        });
+    }
+
+    function setupFileSelection() {
+    const selectAllCheckbox = document.getElementById('select_all');
+    const fileCheckboxes = document.querySelectorAll('.file-checkbox');
+
+    // Show individual file checkboxes on hover
+    document.querySelectorAll('.file').forEach(fileElement => {
+        fileElement.addEventListener('mouseenter', () => {
+            const checkbox = fileElement.querySelector('.file-checkbox');
+            checkbox.classList.remove('hidden');
+        });
+
+        fileElement.addEventListener('mouseleave', () => {
+            const checkbox = fileElement.querySelector('.file-checkbox');
+            checkbox.classList.add('hidden');
+        });
+    });
+
+    // Select all functionality
+    selectAllCheckbox.addEventListener('change', () => {
+        fileCheckboxes.forEach(checkbox => {
+            checkbox.checked = selectAllCheckbox.checked;
+        });
+    });
+
+    // Individual file selection handling
+    fileCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            // Uncheck select all if any individual checkbox is unchecked
+            if (!checkbox.checked) {
+                selectAllCheckbox.checked = false;
+            }
+
+            // Check select all only if all individual checkboxes are checked
+            const allChecked = Array.from(fileCheckboxes).every(cb => cb.checked);
+            selectAllCheckbox.checked = allChecked;
+        });
+    });
+
+
+}
+
+// Call the setup function when the page loads
+document.addEventListener('DOMContentLoaded', setupFileSelection);
+</script>
+</html>

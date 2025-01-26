@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind custom theme configuration
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-orange': {
+                            50: '#FFF3E0',
+                            100: '#FFE0B2',
+                            500: '#FF6B35',
+                            600: '#FF5A1F',
+                            700: '#FF4500'
+                        },
+                        'dark-bg': {
+                            100: '#121212',
+                            200: '#1E1E1E',
+                            300: '#2C2C2C'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Student Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Custom Styles with Dark Theme Scrollbar -->
+    <style>
+
+
+
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2C2C2C;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF6B35;
+            border-radius: 6px;
+        }
+        .dark-input {
+            background-color: #2C2C2C;
+            color: #ffffff;
+            border-color: #4A4A4A;
+        }
+        .custom-bg {
+            background-color: #FFF; /* White background */
+        }
+        .dark-custom-bg {
+            background-color: #1E1E1E; /* Dark background */
+        }
+        .custom-text {
+            color: #FF6B35; /* Custom orange text */
+        }
+        .problem-card {
+            transition: transform 0.3s;
+        }
+        .problem-card:hover {
+            transform: scale(1.05);
+        }
+        .verification-badge {
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+        }
+        .loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #FF6B35; /* Custom orange */
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+
+
+        @keyframes submitPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.submit-button {
+    transition: all 0.3s ease;
+    animation: submitPulse 2s infinite;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.problem-card {
+    animation: slideIn 0.5s ease-out;
+    transition: all 0.3s ease;
+}
+
+.problem-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: calc(90vh - 100px);
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.custom-file-input {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.custom-file-input input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes progressFill {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.progress-animation {
+    position: relative;
+}
+
+.progress-animation::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: #3B82F6;
+    animation: progressFill 2s ease-out forwards;
+}
+
+.verification-badge {
+    transition: all 0.3s ease;
+}
+
+.verification-badge:hover {
+    transform: scale(1.1);
+}
+.verification-progress {
+height: 4px;
+background: #eee;
+margin: 8px 0;
+border-radius: 2px;
+overflow: hidden;
+display: none; /* Initially hidden */
+}
+
+.verification-progress-fill {
+height: 100%;
+width: 0%;
+background: #4CAF50; /* Green color */
+transition: width 0.3s ease; /* Smooth transition */
+}
+
+.submit-button {
+    transition: all 0.3s ease;
+    animation: submitPulse 2s infinite;
+    position: relative;
+}
+
+.loading-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0.25rem;
+    z-index: 10;
+}
+
+.loading-spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.progress-bar {
+    display: none;
+    width: 100%;
+    height: 4px;
+    background: #f0f0f0;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+.progress-bar-fill {
+    width: 0%;
+    height: 100%;
+    background: #4CAF50;
+    transition: width 0.3s ease-in-out;
+}
+
+.submitting .loading-overlay {
+    display: block;
+}
+
+.submitting .progress-bar {
+    display: block;
+}
+
+.switch {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 3px solid #000;
+            background-image: linear-gradient(#eee, #ccc, #eee);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .toggle-switch {
+            margin-right: 130px;
+            width: 60px;
+            height: 60px;
+            border: 3px solid #000;
+            background-image: linear-gradient(#eee, #ccc, #eee);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .toggle-switch .switch-btn {
+            width: 20px;
+            height: 30px;
+            background: linear-gradient(#777, #fff280, #777);
+            border-radius: 6px;
+            border: 2px solid #000;
+            position: relative;
+            transition: transform 0.3s ease;
+            /* Add transition for smooth effect */
+        }
+
+        /* Add animation for the button when it is toggled */
+        .on .toggle-switch .switch-btn {
+            transform: translateY(15%);
+            /* Move the button down */
+        }
+
+        .toggle-switch .switch-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 85%;
+            background: linear-gradient(#ddd, #fff280);
+            border-radius: 4px;
+        }
+
+        /* Move the ::before element down when toggled */
+        .on .toggle-switch .switch-btn::before {
+            top: 15%;
+        }
+
+        .bulb-area {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            margin-right: 50px;
+            margin-top: 0px;
+        }
+
+        .bulb-box {
+            margin-top: -43px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            transform-origin: bottom center;
+            cursor: pointer;
+        }
+
+        .bulb-container {
+            position: absolute;
+            width: 100%;
+            height: 300px;
+            transform-origin: top center;
+            transition: transform 0.3s ease;
+        }
+
+        .bulb {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #444;
+            border-radius: 50%;
+            top: 40px;
+            transform-origin: bottom center;
+        }
+
+        .bulb::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 12.5px;
+            width: 25px;
+            height: 50px;
+            background: #444;
+            border-top: 20px solid #000;
+            border-radius: 10px;
+            z-index: 10000;
+        }
+
+        .bulb span:nth-child(1) {
+            position: absolute;
+            top: -10px;
+            left: -2px;
+            width: 20px;
+            height: 20px;
+            background: transparent;
+            border-bottom-right-radius: 30px;
+            transform: rotate(342deg);
+            box-shadow: 15px 15px 0 5px #444;
+        }
+
+        .bulb span:nth-child(2) {
+            position: absolute;
+            top: -10px;
+            right: -2px;
+            width: 20px;
+            height: 20px;
+            background: transparent;
+            border-bottom-left-radius: 30px;
+            transform: rotate(16.5deg);
+            box-shadow: -15px 15px 0 5px #444;
+        }
+
+        .on .bulb {
+            background: #fff280;
+            box-shadow: 0 0 30px #fff280, 0 0 50px #fff280, 0 0 75px #fff280;
+        }
+
+        .on .bulb::before {
+            background: #fff280;
+        }
+
+        .on .bulb span:nth-child(1) {
+            box-shadow: 15px 15px 0 5px #fff280;
+        }
+
+        .on .bulb span:nth-child(2) {
+            box-shadow: -15px 15px 0 5px #fff280;
+        }
+
+        .on .bulb::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: #fff280;
+            border-radius: 50%;
+            filter: blur(20px);
+        }
+
+        .nightlight-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 204, 128, 0);
+            pointer-events: none;
+            transition: background-color 0.3s ease;
+            z-index: 1;
+        }
+.modalCodeContainer {
+    max-height: 400px; /* Set a maximum height for the code container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Optional: Add some padding */
+    background-color: #f9f9f9; /* Optional: Set a background color */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    border: 1px solid #ddd; /* Optional: Add a border */
+}
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-dark-bg-100 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-2 rounded-full bg-custom-orange-500 text-white hover:bg-custom-orange-600 dark:bg-custom-orange-600 dark:hover:bg-custom-orange-700 transition-all">
+        <svg id="theme-toggle-light-icon" class="w-6 h-6 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 2a 1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464L4.343 5.757a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg>
+        <svg id="theme-toggle-dark-icon" class="w-6 h-6 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+    </button>
+   <!-- Image Preview Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <div class="flex justify-between mb-4">
+           <button id="imageTab" class="tab-button active bg-custom-orange-500 text-white hover:bg-custom-orange-600 rounded transition duration-300" onclick="showImageTab()">Image</button>
+<button id="codeTab" class="tab-button bg-custom-orange-500 text-white hover:bg-custom-orange-600 rounded transition duration-300" onclick="showCodeTab()">Code</button>
+        </div>
+        <div id="modalImageContainer">
+            <img id="modalImage" src="" alt="Preview">
+        </div>
+        <div id="modalCodeContainer" class="hidden modalCodeContainer"> <!-- Add the class here -->
+            <pre id="modalCode" class="whitespace-pre-wrap"></pre>
+        </div>
+        <div class="flex justify-between mt-4">
+            <a id="downloadLink" href="" download class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                Download
+            </a>
+            <button onclick="closeModal()" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                Close
+            </button>
+        </div>
+    </div>
+</div>
+
+    <!-- Main Navigation -->
+ <nav class="bg-white shadow-lg dark:bg-dark-bg-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col sm:flex-row justify-between items-center py-4">
+                <div class="w-full sm:w-auto flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 mb-2 sm:mb-0">
+                    <h1 class="text-xl font-bold custom-text">Student Dashboard</h1>
+                    <div class="nav-info text-gray-600 dark:text-gray-300 flex flex-wrap items-center">
+                        <span class="font-medium">{{ student.username }}</span>
+                        <span class="hidden sm:inline mx-2">|</span>
+                        <span>{{ student.year }} Year</span>
+                        <span class="hidden sm:inline mx-2">|</span>
+                        <span>{{ student.branch }}</span>
+                        <span class="hidden sm:inline mx-2">|</span>
+                        <span>Section {{ student.section }}</span>
+                        <span class="hidden sm:inline mx-2">|</span><br> <br>
+                        <span style="
+    background-color: #e69509; /* Nice background color */
+    color: white; /* Text color */
+    padding: 8px 12px; /* Padding for spacing */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Font size */
+    display: inline-block; /* Make it behave like a block for padding */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+" onmouseover="this.style.backgroundColor='#357ABD'" onmouseout="this.style.backgroundColor='#4A90E2'">
+    {{ student.username if 'username' in student else session['username'] }}
+</span>
+                    </div>
+                </div>
+                <div class="w-full sm:w-auto flex justify-between sm:justify-end items-center space-x-4">
+                    <div class="flex items-center">
+                        <div class="toggle-switch">
+                            <div class="switch-btn"></div>
+                        </div>
+                        <div class="bulb-area">
+                            <div class="bulb-box">
+                                <div class="bulb-container">
+                                    <div class="bulb">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="{{ url_for('logout') }}" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="nightlight-overlay"></div>
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Progress Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white dark:bg-dark-bg-200 rounded-lg shadow-md p-6 problem-card">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">Total Problems</h3>
+                        <p class="text-3xl font-bold custom-text">{{ problems|length }}</p>
+                    </div>
+                    <i class="fas fa-th-list text-4xl custom-text opacity-70"></i>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-dark-bg-200 rounded-lg shadow-md p-6 problem-card">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">Verified Submissions</h3>
+                        <p class="text-3xl font-bold text-green-600">
+                            {{ submissions.values()|selectattr('verified')|list|length }}
+                        </p>
+                    </div>
+                    <i class="fas fa-check-circle text-4xl text-green-700 opacity-100"></i>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-dark-bg-200 rounded-lg shadow-md p-6 problem-card">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">Completion Rate</h3>
+                        <p class="text-3xl font-bold text-blue-600">
+                            {% set verified_count = submissions.values()|selectattr('verified')|list|length %}
+                            {% if problems|length > 0 %}
+                                {{ "%.1f"|format(verified_count / problems|length * 100) }}%
+                            {% else %}
+                                0%
+                            {% endif %}
+                        </p>
+                    </div>
+                    <i class="fas fa-chart-line text-4xl text-blue-400 opacity-50"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Problems Table -->
+        <div class="bg-white dark:bg-dark-bg-200 rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-xl font-semibold mb-4">Your Problems</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full table-auto">
+                    <thead class="bg-gray-100 dark:bg-dark-bg-300">
+                        <tr>
+                            <th class="px-4 py-2 text-left dark:text-gray-300">Problem</th>
+                            <th class="px-4 py-2 text-left dark:text-gray-300">Link</th>
+                            <th class="px-4 py-2 text-center dark:text-gray-300">Status</th>
+                            <th class="px-4 py-2 text-center dark:text-gray-300">Verification</th>
+                            <th class="px-4 py-2 text-center dark:text-gray-300">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for problem in problems %}
+                            <tr class="border-t dark:border-gray-700 problem-card">
+                                <td class="px-4 py-2 dark:text-gray-200">{{ problem.title }}</td>
+                                <td class="px-4 py-2 dark:text-gray-200">
+                                    <a href="{{ problem.link }}" target="_blank"
+                                       class="text-blue-500 hover:text-blue-700 transition duration-300">
+                                        Solve Problem
+                                    </a>
+                                </td>
+                                <td class="px-4 py-2 text-center">
+                                    {% if problem.title in submissions %}
+                                        {% if submissions[problem.title].verified %}
+                                            <span class="px-2 py-1 bg-green-100 text-green-800 rounded verification-badge">
+    Verified &#10003;
+</span>
+
+                                        {% else %}
+                                            <span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded verification-badge">
+                                                Pending
+                                            </span>
+                                        {% endif %}
+                                    {% else %}
+                                        <span class="px-2 py-1 bg-gray-100 text-gray-800 rounded">
+                                            Not Submitted
+                                        </span>
+                                    {% endif %}
+                                </td>
+                                <td class="px-4 py-2 text-center">
+                                    {% if problem.title in submissions and submissions[problem.title].verification_details %}
+                                        <div class="text-sm space-y-1">
+                                            <div class="verification-badge">
+                                                {% if submissions[problem.title].verification_details.link_matched %}
+
+                                                    <span class="text-green-600">&#10003; Problem solved</span>
+
+
+                                                {% else %}
+                                                    <span class="text-red-600">&#10007; Link Mismatch</span>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                </td>
+                                <td class="px-4 py-2 text-center">
+                                    <div class="flex justify-center space-x-2">
+                                        {% if problem.title in submissions %}
+                                            <button onclick="showImage('{{ url_for('static', filename='uploads/' + submissions[problem.title].filename) }}', '{{ problem.title|e }}')"
+                                        class="bg-blue-500 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm transition duration-300">
+                                    View
+                                </button>
+                                            {% if not submissions[problem.title].verified %}
+                                            <form action="{{ url_for('submit_solution') }}" method="POST" enctype="multipart/form-data" class="inline-block solution-form" onsubmit="return false;">
+                                                <input type="hidden" name="problem_title" value="{{ problem.title }}">
+                                                <div class="custom-file-input relative">
+                                                    <button type="button" class="submit-button bg-yellow-500 ```html
+                                                    hover:bg-yellow-600 text-white px-3 py-1 rounded text-sm">
+                                                        Resubmit
+                                                        <div class="loading-overlay">
+                                                            <div class="loading-spinner"></div>
+                                                        </div>
+                                                    </button>
+                                                <!--    <input type="file"
+                                                           name="screenshot"
+                                                           accept="image/*"
+                                                           class="absolute inset-0 opacity-0 cursor-pointer"
+                                                           onchange="performOCRAndSubmit(event)" multiple> -->
+                                                           <input type="file"
+       name="screenshot"
+       accept="image/*"
+       class="absolute inset-0 opacity-0 cursor-pointer"
+       >
+                                                </div>
+                                                <div class="verification-progress">
+                                                    <div class="verification-progress-fill"></div>
+                                                </div>
+                                            </form>
+                                            {% endif %}
+                                        {% else %}
+                                        <form action="{{ url_for('submit_solution') }}" method="POST" enctype="multipart/form-data" class="inline-block solution-form">
+                                            <input type="hidden" name="problem_title" value="{{ problem.title }}">
+                                            <div class="custom-file-input">
+                                                <button type="button" class="submit-button bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded text-sm">
+                                                    Submit Solution
+                                                    <div class="loading-overlay">
+                                                        <div class="loading-spinner"></div>
+                                                    </div>
+                                                </button>
+                                                <input type="file" name="screenshot" accept="image/*" class="absolute inset-0 opacity-0 cursor-pointer" >
+                                            </div>
+                                            <div class="verification-progress">
+                                                <div class="verification-progress-fill"></div>
+                                            </div>
+                                        </form>
+                                        {% endif %}
+                                        <!-- New Code Submission Button -->
+                                        <button type="button" class="submit-button bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm" onclick="openCodeSubmissionModal('{{ problem.title }}')">
+                                            Submit Code
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Code Submission Modal -->
+<div id="codeSubmissionModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" onclick="closeCodeSubmissionModal()">&times;</span>
+        <h2>Submit Your Code</h2>
+        <textarea id="codeInput" rows="10" placeholder="Paste your code here..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+        <button id="submitCodeButton" class="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded text-sm mt-2" onclick="submitCodeToServer()">Submit</button>
+    </div>
+</div>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-sm font-medium dark:text-gray-300">by-team_GARUDA</p>
+
+</body>
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+
+    // Check for saved theme preference or default to system preference
+    const savedTheme = localStorage.getItem('color-theme');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+    // Set initial theme
+    if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
+        htmlElement.classList.add('dark');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        // Toggle dark mode
+        htmlElement.classList.toggle('dark');
+
+        // Save preference
+        if (htmlElement.classList.contains('dark')) {
+            localStorage.setItem('color-theme', 'dark');
+        } else {
+            localStorage.setItem('color-theme', 'light');
+        }
+    });
+
+    let activeOCRProcesses = 0; // Counter for active OCR processes
+
+    function showImage(src, problemTitle) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const downloadLink = document.getElementById('downloadLink');
+
+    modal.classList.add('show');
+    modalImg.src = src;
+    downloadLink.href = src;
+
+    // Show the image tab by default
+    showImageTab();
+
+    // Fetch the code from the server
+    fetch(`/get_code?problem_title=${encodeURIComponent(problemTitle)}`)
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('Code not found');
+            }
+        })
+        .then(data => {
+            displayCode(data.code); // Display the fetched code
+        })
+        .catch(error => {
+            console.error('YOU didn\'t submitted code yet', error);
+            displayCode('YOU didn\'t submitted code yet'); // Display an error message
+        });
+
+    // Add loading animation
+    modalImg.style.opacity = '0';
+    modalImg.onload = function() {
+        modalImg.style.transition = 'opacity 0.3s ease';
+        modalImg.style.opacity = '1';
+    };
+}
+
+function displayCode(code) {
+    document.getElementById('modalCode').textContent = code; // Set the submitted code
+    showCodeTab(); // Switch to the code tab
+}
+
+function showImageTab() {
+    document.getElementById('modalImageContainer').classList.remove('hidden');
+    document.getElementById('modalCodeContainer').classList.add('hidden');
+    document.getElementById('imageTab').classList.add('active');
+    document.getElementById('codeTab').classList.remove('active');
+}
+
+function showCodeTab() {
+    document.getElementById('modalImageContainer').classList.add('hidden');
+    document.getElementById('modalCodeContainer').classList.remove('hidden');
+    document.getElementById('codeTab').classList.add('active');
+    document.getElementById('imageTab').classList.remove('active');
+}
+
+
+
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    modal.classList.remove('show');
+}
+
+// Close modal when pressing escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeModal();
+    }
+});
+
+    // Initialize problem cards with staggered animation
+    document.querySelectorAll('.problem-card').forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.1}s`;
+    });
+
+    // Fallback alert function if SweetAlert is not available
+    function fallbackAlert(type, title, text) {
+        const alertDiv = document.createElement('div');
+        alertDiv.style.position = 'fixed';
+        alertDiv.style.top = '20px';
+        alertDiv.style.left = '50%';
+        alertDiv.style.transform = 'translateX(-50%)';
+        alertDiv.style.backgroundColor = type === 'success' ? 'green' : 'red';
+        alertDiv.style.color = 'white';
+        alertDiv.style.padding = '15px';
+        alertDiv.style.borderRadius = '5px';
+        alertDiv.style.zIndex = '1000';
+        alertDiv.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+
+        alertDiv.innerHTML = `
+            <strong>${title}</strong><br>
+            ${text}
+        `;
+
+        document.body.appendChild(alertDiv);
+
+        setTimeout(() => {
+            document.body.removeChild(alertDiv);
+        }, 3000);
+    }
+
+    // Unified alert function
+    const showAlert = (type, title, text) => {
+        if (window.Swal && typeof Swal.fire === 'function') {
+            Swal.fire({ icon: type, title, text });
+        } else {
+            fallbackAlert(type, title, text);
+        }
+    };
+
+    async function performOCRAndSubmit(event) {
+    event.preventDefault(); // Prevent default form submission
+    console.log('performOCRAndSubmit called');
+    const file = event.target.files[0];
+    const form = event.target.closest('form');
+
+    if (!file) {
+        console.error('No file selected');
+        return;
+    }
+
+    const problemTitle = form.querySelector('input[name="problem_title"]')?.value || 'Unknown Problem';
+    const progressContainer = form.querySelector('.verification-progress');
+    const progressBar = form.querySelector('.verification-progress-fill');
+    const submitButton = form.querySelector('.submit-button');
+
+    try {
+        // Increment the active OCR process counter
+        activeOCRProcesses++;
+
+        // Show loading states
+        if (progressContainer) progressContainer.style.display = 'block';
+        if (progressBar) progressBar.style.width = '0%';
+        if (submitButton) submitButton.disabled = true;
+
+        console.log(`Starting OCR for problem: ${problemTitle}`);
+
+        // Use the new image processing function
+        const extractedText = await imageProcess(file, progressBar);
+
+        // Log the extracted text
+        console.log('OCR Text Extracted:', extractedText);
+
+        // Prepare form data
+        const formData = new FormData(form);
+        formData.append('ocr_text', extractedText);
+
+        // Submit form with OCR text
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData
+        });
+
+        // Check response
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`Submission failed: ${errorText}`);
+        }
+
+        // Parse verification result
+        const verificationResult = await response.json();
+        console.log('Submission Result:', verificationResult);
+
+        // Complete progress
+        if (progressBar) progressBar.style.width = '100%';
+
+        // Handle verification result
+        if (verificationResult.verified) {
+            showAlert('success', 'Submission Verified!', 'Your solution has been successfully verified.');
+        } else {
+            showAlert('error', 'Verification Failed', verificationResult.message || 'Please check your submission and try again.');
+        }
+
+    } catch (error) {
+        console.error('OCR and Submission Error:', error);
+
+        // Show error to user
+        showAlert('error', 'Submission Error', `Error processing submission: ${error.message}`);
+    } finally {
+        // Decrement the active OCR process counter
+        activeOCRProcesses--;
+
+        // Reset loading states
+        if (progressContainer) {
+            progressContainer.style.display = 'none';
+            if (progressBar) progressBar.style.width = '0%';
+        }
+
+        // Always re-enable submit button
+        if (submitButton) submitButton.disabled = false;
+
+        // Check if all OCR processes are complete
+        if (activeOCRProcesses === 0) {
+            // Reload the page after a short delay
+            setTimeout(() => window.location.reload(), 1500);
+        }
+    }
+}
+
+// New image processing function
+async function imageProcess(file, progressBar) {
+console.log('imageProcess called'); //log hehe
+    // Load image and convert it to an image object
+    const img = new Image();
+    img.src = URL.createObjectURL(file);
+
+    // Wait for the image to load
+    await new Promise(resolve => {
+        img.onload = resolve;
+    });
+
+    // Create a canvas to draw the enlarged image
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+
+    const upscaleBy = 2;
+    // Enlarge the image by doubling its size
+    canvas.width = img.width * upscaleBy;
+    canvas.height = img.height * upscaleBy;
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+    // Convert canvas to Blob object
+    const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/jpeg', 1));
+
+    // Use Tesseract.js to recognize the text in the enlarged image
+    const result = await Tesseract.recognize(blob, 'eng', {
+        logger: (m) => {
+            if (progressBar) {
+                const percent = Math.round(m.progress * 100);
+                progressBar.style.width = `${percent}%`;
+                console.log(`OCR Progress: ${percent}%`);
+            }
+        }
+    });
+
+    const text = result?.data?.text;
+
+    return text;
+}
+
+// Attach event
+
+// Attach event listeners when DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    const fileInputs = document.querySelectorAll('input[type="file"]');
+    fileInputs.forEach(input => {
+        // Remove any existing event listeners before adding a new one
+        input.removeEventListener('change', performOCRAndSubmit);
+        input.addEventListener('change', (event) => {
+            console.log('File input changed:', event); // Log the event correctly
+            performOCRAndSubmit(event);
+        });
+    });
+});
+    (function() {
+    const bulbBox = document.querySelector('.bulb-box');
+    const bulbContainer = document.querySelector('.bulb-container');
+    const bulb = document.querySelector('.bulb');
+    const switchButton = document.querySelector('.toggle-switch .switch-btn');
+    const body = document.querySelector('body');
+    const lightArea = document.querySelector('.bulb-area');
+    const nightlightOverlay = document.querySelector('.nightlight-overlay');
+
+    let isLightOn = false;
+    let currentRotation = 0;
+    let bulbRotation = 0;
+    let intensity = 0.1;
+    let swingSpeed = 1;
+    let swingDirection = -1;
+    let isControlled = false;
+    let isDragging = false; // Declare isDragging
+    let startX = 0; // Declare startX
+
+    function toggleLight() {
+        isLightOn = !isLightOn;
+        lightArea.classList.toggle('on', isLightOn);
+        body.classList.toggle('on', isLightOn);
+        switchButton.classList.toggle('on', isLightOn);touchstart
+        if (isLightOn) {
+            currentRotation = 0;
+            bulbRotation = 0;
+            swingDirection = 1;
+            bulbBox.style.transform = `rotate(0deg)`;
+            bulbContainer.style.transform = `rotate(0deg)`;
+            intensity = 0.1;
+            updateLightIntensity();
+        } else {
+            currentRotation = 0;
+            bulbRotation = 0;
+            bulbBox.style.transform = `rotate(0deg)`;
+            bulbContainer.style.transform = `rotate(0deg)`;
+            nightlightOverlay.style.backgroundColor = 'rgba(255, 204, 128, 0)';
+        }
+    }
+
+    switchButton.addEventListener('click', toggleLight);
+
+    function updateLightIntensity() {
+        intensity = Math.abs(currentRotation / 90);
+        intensity = Math.min(intensity, 0.5);
+        nightlightOverlay.style.backgroundColor = `rgba(255, 204, 128, ${intensity})`;
+    }
+
+    function naturalBulbSwing() {
+        if (!isLightOn || isControlled) return;
+        bulbRotation += swingSpeed * swingDirection;
+        if (Math.abs(bulbRotation) > 45) {
+            swingDirection *= -1;
+        }
+        bulbContainer.style.transform = `rotate(${bulbRotation}deg)`;
+    }
+
+    function startBulbDrag(e) {
+        if (!isLightOn) return;
+        isDragging = true;
+        startX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
+        isControlled = true;
+    }
+
+    function stopBulbDrag() {
+        if (!isLightOn) return;
+        isDragging = false;
+        isControlled = false;
+    }
+
+    function dragBulb(e) {
+        if (!isLightOn || !isDragging) return;
+        let deltaX = startX - (e.type === 'touchmove' ? e.touches[0].clientX : e.clientX);
+        currentRotation += deltaX / 5;
+        currentRotation = Math.max(-35, Math.min(35, currentRotation));
+        bulbBox.style.transform = `rotate(${currentRotation}deg)`;
+        bulbContainer.style.transform = `rotate(${currentRotation}deg)`;
+        updateLightIntensity();
+        startX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+    }
+
+    function animate() {
+        naturalBulbSwing();
+        requestAnimationFrame(animate);
+    }
+
+    bulbBox.addEventListener('pointerdown', startBulbDrag);
+    bulbBox.addEventListener('touchstart', startBulbDrag, { passive: true });
+
+    document.addEventListener('pointermove', dragBulb);
+    document.addEventListener('touchmove', dragBulb, { passive: true });
+
+    document.addEventListener('pointerup', stopBulbDrag);
+    document.addEventListener('touchend', stopBulbDrag, { passive: true });
+
+    animate();
+})();
+
+
+
+function openCodeSubmissionModal(problemTitle) {
+    console.log("Opening code submission modal for:", problemTitle); // Debugging line
+    const modal = document.getElementById('codeSubmissionModal');
+    modal.classList.add('show'); // Add the 'show' class to display the modal
+    document.getElementById('codeInput').setAttribute('data-problem-title', problemTitle);
+}
+
+function closeCodeSubmissionModal() {
+    const modal = document.getElementById('codeSubmissionModal');
+    modal.classList.remove('show'); // Remove the 'show' class to hide the modal
+    document.getElementById('codeInput').value = ''; // Clear the textarea
+}
+
+    async function submitCodeToServer() {
+        const code = document.getElementById('codeInput').value;
+        const problemTitle = document.getElementById('codeInput').getAttribute('data-problem-title');
+
+        if (!code) {
+            alert('Please paste your code before submitting.');
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('code', code);
+        formData.append('problem_title', problemTitle);
+
+        try {
+            const response = await fetch('/submit_code', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (!response.ok) {
+                throw new Error('Code submission failed.');
+            }
+
+            alert('Code submitted successfully!');
+            closeCodeSubmissionModal();
+        } catch (error) {
+            console.error('Error submitting code:', error);
+            alert('Error submitting code: ' + error.message);
+        }
+    }
+</script>
+</html>

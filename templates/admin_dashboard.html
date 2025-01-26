@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Tailwind CSS with custom theme configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind custom theme configuration
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-orange': {
+                            50: '#FFF3E0',
+                            100: '#FFE0B2',
+                            500: '#FF6B35',
+                            600: '#FF5A1F',
+                            700: '#FF4500'
+                        },
+                        'dark-bg': {
+                            100: '#121212',
+                            200: '#1E1E1E',
+                            300: '#2C2C2C'
+                        }
+                    }
+                }
+            }
+        }
+
+
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2C2C2C;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF6B35;
+            border-radius: 6px;
+        }
+        .dark-input {
+            background-color: #2C2C2C;
+            color: #ffffff;
+            border-color: #4A4A4A;
+        }
+        .modal {
+        display: flex;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 600px;
+        position: relative;
+        max-height: 80vh; /* Set a maximum height for the modal */
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+    .modal-list {
+        max-height: 60vh; /* Set a maximum height for the list */
+        overflow-y: auto; /* Enable vertical scrolling for the list */
+    }
+
+    </style>
+</head>
+
+<body class="bg-gray-100 dark:bg-dark-bg-100 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-2 rounded-full bg-custom-orange-500 text-white hover:bg-custom-orange-600 dark:bg-custom-orange-600 dark:hover:bg-custom-orange-700 transition-all">
+        <svg id="theme-toggle-light-icon" class="w-6 h-6 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464L4.343 5.757a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg>
+        <svg id="theme-toggle-dark-icon" class="w-6 h-6 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+    </button>
+
+    <!-- Main Dashboard Container -->
+    <div class="container mx-auto px-4 py-8">
+        {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="
+                px-4 py-3 rounded mb-4
+                bg-green-50 dark:bg-green-900/30
+                border-l-4 border-green-500
+                text-green-700 dark:text-green-300
+                flex items-center
+                shadow-md
+                relative
+                overflow-hidden
+            ">
+                <span class="mr-3">
+                    <i class="fas fa-check-circle"></i>
+                </span>
+                {{ message }}
+                <span class="absolute top-0 right-0 p-1 cursor-pointer" onclick="this.parentElement.style.display='none'">
+                    <i class="fas fa-times"></i>
+                </span>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+        <!-- Navigation -->
+        <nav class="bg-white dark:bg-dark-bg-200 shadow-lg rounded-lg mb-8">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <h1 class="text-2xl font-bold text-custom-orange-600 dark:text-custom-orange-500">
+                        admin_dashboard
+                    </h1>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                 <a href="{{ url_for('admin_tools') }}" class="bg-custom-orange-500 hover:bg-custom-orange-600 text-white px-4 py-2 rounded-md transition-colors">
+                        Admin Tools
+                    </a>
+
+                    <a href="{{ url_for('logout') }}" class="bg-custom-orange-500 hover:bg-custom-orange-600 text-white px-4 py-2 rounded-md transition-colors">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </nav>
+<!-- Performance Metrics -->
+<div class="grid md:grid-cols-3 gap-6 mb-8">
+    <div class="bg-white dark:bg-dark-bg-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition-transform">
+        <div class="flex justify-between items-center">
+            <div>
+                <h3 class="text-lg font-semibold text-gray-600 dark:text-gray-300">Total Students</h3>
+                <p class="text-3xl font-bold text-custom-orange-600 dark:text-custom-orange-500">{{ total_students }}</p>
+            </div>
+            <i class="fas fa-users text-4xl text-custom-orange-500 opacity-50"></i>
+        </div>
+    </div>
+    <div class="bg-white dark:bg-dark-bg-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition-transform">
+        <div class="flex justify-between items-center">
+            <div>
+                <h3 class="text-lg font-semibold text-gray-600 dark:text-gray-300">Active Problems</h3>
+                <p class="text-3xl font-bold text-green-600 dark:text-green-400">
+                    <button onclick="openModal('problemsModal')" class="text-green-600 dark:text-green-400 focus:outline-none">
+                        {{ active_problems }}
+                    </button>
+                </p>
+            </div>
+            <i class="fas fa-book-open text-4xl text-green-500 opacity-50"></i>
+        </div>
+    </div>
+    <div class="bg-white dark:bg-dark-bg-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition-transform">
+        <div class="flex justify-between items-center">
+            <div>
+                <h3 class="text-lg font-semibold text-gray-600 dark:text-gray-300">Avg. Completion Rate</h3>
+                <p class="text-3xl font-bold text-blue-600 dark:text-blue-400">
+                    <button onclick="openModal('completionRateModal')" class="text-blue-600 dark:text-blue-400 focus:outline-none">
+                        {{ avg_completion_rate }}%
+                    </button>
+                </p>
+            </div>
+            <i class="fas fa-chart-line text-4xl text-blue-500 opacity-50"></i>
+        </div>
+    </div>
+</div>
+
+<!-- Problems Modal -->
+<div id="problemsModal" class="modal hidden" onclick="closeModal(event, 'problemsModal')">
+    <div class="modal-content" onclick="event.stopPropagation();">
+        <h2>All Problems</h2>
+        <ul class="modal-list">
+            {{ unique_problems | safe }}
+        </ul>
+    </div>
+</div>
+
+<!-- Completion Rate Modal -->
+<div id="completionRateModal" class="modal hidden" onclick="closeModal(event, 'completionRateModal')">
+    <div class="modal-content" onclick="event.stopPropagation();">
+        <h2>Students by Completion Rate</h2>
+        <ul class="modal-list" style="color: black;">
+            {% for username, rate in completion_rates %}
+                <li>{{ username }} - {{ rate }}%</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+        <!-- Filters and Problem Assignment -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <!-- Filters -->
+            <div class="bg-white dark:bg-dark-bg-200 rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-semibold mb-4 dark:text-gray-100"> Quick Filters</h2>
+                <form method="GET" action="{{ url_for('admin_dashboard') }}" class="space-y-4">
+                    <select name="year" class="w-full p-2 border rounded dark:bg-dark-bg-300 dark:border-gray-700 dark:text-gray-200">
+                        <option value="All Years">All Years</option>
+                        {% for year in years %}
+                            <option value="{{ year }}" {% if current_year == year %}selected{% endif %}>{{ year }}</option>
+                        {% endfor %}
+                    </select>
+                    <select name="branch" class="w-full p-2 border rounded dark:bg-dark-bg-300 dark:border-gray-700 dark:text-gray-200">
+                        <option value="All Branches">All Branches</option>
+                        {% for branch in branches %}
+                            <option value="{{ branch }}" {% if current_branch == branch %}selected{% endif %}>{{ branch }}</option>
+                        {% endfor %}
+                    </select>
+                    <select name="section" class="w-full p-2 border rounded dark:bg-dark-bg-300 dark:border-gray-700 dark:text-gray-200">
+                        <option value="All Sections">All Sections</option>
+                        {% for section in sections %}
+                            <option value="{{ section }}" {% if current_section == section %}selected{% endif %}>{{ section }}</option>
+                        {% endfor %}
+                    </select>
+                    <button type="submit" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Apply Filters
+                    </button>
+                </form>
+            </div>
+
+            <!-- Problem Assignment -->
+<div class="bg-white dark:bg-dark-bg-200 rounded-lg shadow-md p-6">
+    <h2 class="text-xl font-semibold mb-4 dark:text-gray-100">Assign New Problem</h2>
+    <form action="{{ url_for('bulk_assign') }}" method="POST" class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <select name="year" class="w-full p-2 border rounded dark:bg-dark-bg-300 dark:border-gray-700 dark:text-gray-200" required>
+                <option value="All Years" {% if request.args.get('year') == 'All Years' %}selected{% endif %}>All Years</option>
+                {% for year in years %}
+                    <option value="{{ year }}" {% if request.args.get('year') == year %}selected{% endif %}>{{ year }}</option>
+                {% endfor %}
+            </select>
+            <select name="branch" class="w-full p-2 border rounded dark:bg-dark-bg-300 dark:border-gray-700 dark:text-gray-200" required>
+                <option value="All Branches" {% if request.args.get('branch') == 'All Branches' %}selected{% endif %}>All Branches</option>
+                {% for branch in branches %}
+                    <option value="{{ branch }}" {% if request.args.get('branch') == branch %}selected{% endif %}>{{ branch }}</option>
+                {% endfor %}
+            </select>
+            <select name="section" class="w-full p-2 border rounded dark:bg-dark-bg-300 dark:border-gray-700 dark:text-gray-200" required>
+                <option value="All Sections" {% if request.args.get('section') == 'All Sections' %}selected{% endif %}>All Sections</option>
+                {% for section in sections %}
+                    <option value="{{ section }}" {% if request.args.get('section') == section %}selected{% endif %}>{{ section }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" name="problem_title" placeholder="Problem Title"
+                   class="w-full p-2 border rounded dark:bg-dark-bg-300 dark:border-gray-700 dark:text-gray-200" required>
+            <input type="url" name="problem_link" placeholder="Problem Link"
+                   class="w-full p-2 border rounded dark:bg-dark-bg-300 dark:border-gray-700 dark:text-gray-200" required>
+        </div>
+        <button type="submit" class="w-full bg-custom-orange-500 text-white p-2 rounded hover:bg-custom-orange-600 transition-colors">
+            Assign Problem
+        </button>
+    </form>
+</div>
+        </div>
+
+        <!-- Students List -->
+        <div class="bg-white dark:bg-dark-bg-200 rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-semibold mb-4">Students List</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full table-auto">
+                    <thead>
+                        <tr class="bg-gray-100 dark:bg-dark-bg-300">
+                            <th class="px-4 py-2 text-left dark:text-gray-300">Username</th>
+                            <th class="px-4 py-2 text-left dark:text-gray-300">Year</th>
+
+                            <th class="px-4 py-2 text-left dark:text-gray-300">Branch</th>
+                            <th class="px-4 py-2 text-left dark:text-gray-300">Section</th>
+                            <th class="px-4 py-2 text-center dark:text-gray-300">Problems</th>
+                            <th class="px-4 py-2 text-center dark:text-gray-300">Completion</th>
+                            <th class="px-4 py-2 text-center dark:text-gray-300">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for username, data in students.items() %}
+                            <tr class="border-t dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-dark-bg-300">
+                                <td class="px-4 py-2 dark:text-gray-200">{{ username }}</td>
+                                <td class="px-4 py-2 dark:text-gray-200">{{ data.year }}</td>
+                                <td class="px-4 py-2 dark:text-gray-200">{{ data.branch }}</td>
+                                <td class="px-4 py-2 dark:text-gray-200">{{ data.section }}</td>
+                                <td class="px-4 py-2 text-center">{{ problems.get(username, [])|length }}</td>
+                                <td class="px-4 py-2 text-center">
+                                    {% set verified_count = namespace(count=0) %}
+                                    {% for sub in submissions.get(username, {}).values() %}
+                                        {% if sub.verified %}
+                                            {% set verified_count.count = verified_count.count + 1 %}
+                                        {% endif %}
+                                    {% endfor %}
+                                    {% set completion = (verified_count.count / problems.get(username, [])|length * 100)|round(1) if problems.get(username, []) else 0 %}
+                                    <span class="px-2 py-1 rounded {% if completion >= 75 %}bg-green-100 text-green-800{% elif completion >= 50 %}bg-yellow-100 text-yellow-800{% else %}bg-red-100 text-red-800{% endif %}">
+                                        {{ completion }}%
+                                    </span>
+                                </td>
+                                <td class="px-4 py-2 text-center">
+                                    <a href="{{ url_for('view_student_details', username=username) }}" class="text-blue-500 hover:text-blue-700">View Details</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div style="text-align: right; margin-right: 55px;">
+    <span class="text-sm font-medium dark:text-gray-300 ">team_GARUDA</span>
+
+</div>
+
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('color-theme');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+        // Set initial theme
+        if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
+            htmlElement.classList.add('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            // Toggle dark mode
+            htmlElement.classList.toggle('dark');
+
+            // Save preference
+            if (htmlElement.classList.contains('dark')) {
+                localStorage.setItem('color-theme', 'dark');
+            } else {
+                localStorage.setItem('color-theme', 'light');
+            }
+        });
+
+
+        function openModal(modalId) {
+        document.getElementById(modalId).classList.remove('hidden');
+    }
+
+    function closeModal(event, modalId) {
+        // Check if the click is outside the modal content
+        if (event.target === document.getElementById(modalId)) {
+            document.getElementById(modalId).classList.add('hidden');
+        }
+    }
+    </script>
+
+    <!-- Optional: Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</body>
+</html>

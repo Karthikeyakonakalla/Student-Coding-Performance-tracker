@@ -1,0 +1,9 @@
+run this first on terminal
+
+pip install -r requirements.txt
+
+
+then pyton3 or python app.py
+
+
+if something not working (obviusly " :) " ) contact me at telegram @vbs_1

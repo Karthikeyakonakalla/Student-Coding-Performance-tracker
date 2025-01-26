@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details - DSA Problem Tracker</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <a href="{{ url_for('admin_dashboard') }}" class="text-gray-600 hover:text-gray-900">
+                        ← Back to Dashboard
+                    </a>
+                    <h1 class="text-xl font-bold">Student Details: {{ username }}</h1>
+                </div>
+                <a href="{{ url_for('logout') }}" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                    Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="bg-green-100 border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <!-- Student Information Card -->
+        <div class="card" data-rarity="rare holo">
+            <div class="card__translater">
+                <div class="card__rotator">
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Student Information</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <p class="text-gray-600">Year</p>
+                                <p class="font-semibold">{{ student_data.year }}</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">Branch</p>
+                                <p class="font-semibold">{{ student_data.branch }}</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">Section</p>
+                                <p class="font-semibold">{{ student_data.section }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Overview Card -->
+        <div class="card" data-rarity="rare holo">
+            <div class="card__translater">
+                <div class="card__rotator">
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Progress Overview</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <p class="text-gray-600">Total Problems</p>
+                                <p class="text-3xl font-bold text-blue-600">{{ problems|length }}</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">Problems Solved</p>
+                                <p class="text-3xl font-bold text-green-600">
+                                    {% set verified_count = namespace(count=0) %}
+                                    {% for problem in problems %}
+                                        {% if problem.title in submissions and submissions[problem.title].verified %}
+                                            {% set verified_count.count = verified_count.count + 1 %}
+                                        {% endif %}
+                                    {% endfor %}
+                                    {{ verified_count.count }}
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">Completion Rate</p>
+                                <p class="text-3xl font-bold text-purple-600">
+                                    {% set verified_count = namespace(count=0) %}
+                                    {% for problem in problems %}
+                                        {% if problem.title in submissions and submissions[problem.title].verified %}
+                                            {% set verified_count.count = verified_count.count + 1 %}
+                                        {% endif %}
+                                    {% endfor %}
+                                    {{ (verified_count.count / problems|length * 100)|round(1) if problems|length > 0 else 0 }}%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Problem List Card -->
+        <div class="card" data-rarity="rare holo">
+            <div class="card__translater">
+                <div class="card__rotator">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h2 class="text-xl font-semibold mb-4">Assigned Problems</h2>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full table-auto">
+                                <thead>
+                                    <tr class="bg-gray-100">
+                                        <th class="px-4 py-2 text-left">Problem Title</th>
+                                        <th class="px-4 py-2 text-left">Assigned Date</th>
+                                        <th class="px-4 py-2 text-left">Status</th>
+                                        <th class="px-4 py-2 text-left">Verification</th>
+                                        <th class="px-4 py-2 text-left">Submission</th>
+                                        <th class="px-4 py-2 text-left">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for problem in problems %}
+                                        <tr class="border-t">
+                                            <td class="px-4 py-2">
+                                                <a href="{{ problem.link }}" target="_blank" class="text-blue-500 hover:text-blue-700">
+                                                    {{ problem.title }}
+                                                </a>
+                                            </td>
+                                            <td class="px-4 py-2">{{ problem.assigned_date }}</td>
+                                            <td class="px-4 py-2">
+                                                {% if problem.title in submissions %}
+                                                    {% if submissions[problem.title].verified %}
+                                                        <span class="px-2 py-1 rounded bg-green-100 text-green-800">Complete</span>
+                                                    {% else %}
+                                                        <span class="px-2 py-1 rounded bg-yellow-100 text-yellow-800">Pending Verification</span>
+                                                    {% endif %}
+                                                {% else %}
+                                                    <span class="px-2 py-1 rounded bg-red-100 text-red-800">Not Submitted</span>
+                                                {% endif %}
+                                            </td>
+                                            <td class="px-4 py-2">
+                                                {% if problem.title in submissions %}
+                                                    {% if submissions[problem.title].verified %}
+                                                        <span class="px-2 py-1 rounded bg-green-100 text-green-800">Verified</span>
+                                                    {% else %}
+                                                        <span class="px-2 py-1 rounded bg-red-100 text-red-800">Not Verified</span>
+                                                    {% endif %}
+                                                {% else %}
+                                                    -
+                                                {% endif %}
+                                            </td>
+                                            <td class="px-4 py-2">
+                                                {% if problem.title in submissions %}
+                                                    <a href="{{ url_for('uploaded_file', filename=submissions[problem.title].filename) }}" target="_blank" class="text-blue-500 hover:text-blue-700">
+                                                        View Submission
+                                                    </a>
+                                                {% else %}
+                                                    -
+                                                {% endif %}
+                                            </td>
+                                            <td class="px-4 py-2">
+                                                {% if problem.title in submissions and not submissions[problem.title].verified %}
+                                                    <form action="{{ url_for('verify_problem', problem_title=problem.title) }}" method="post">
+                                                        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded">
+                                                            Verify
+                                                        </button>
+                                                    </form>
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
