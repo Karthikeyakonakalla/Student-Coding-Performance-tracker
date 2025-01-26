@@ -12,7 +12,7 @@ To create an image album, you can organize your images in a dedicated folder and
 ### Example
 Here’s how you can display images in your README:
 ```markdown
-![image1](https://raw.githubusercontent.com/vbs-0/DSAAllocator/main/images/image1.png)
+![Alt text](images/image1.png)
 ![Image 2](https://raw.githubusercontent.com/vbs-0/DSAAllocator/main/images/image2.png)
 ![Image 3](https://raw.githubusercontent.com/vbs-0/DSAAllocator/main/images/image3.png)
 ![Image 4](https://raw.githubusercontent.com/vbs-0/DSAAllocator/main/images/image4.png)
