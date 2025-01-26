@@ -12,7 +12,7 @@ To create an image album, you can organize your images in a dedicated folder and
 ### Example
 Here’s how you can display images in your README:
 ```markdown
-![Image 1](images/image1.png)
+![image1](images/image1.png)
 ![Image 2](images/image2.png)
 ![Image 3](images/image3.png)
 ![Image 4](images/image4.png)
