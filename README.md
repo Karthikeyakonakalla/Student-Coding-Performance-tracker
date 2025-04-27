@@ -47,6 +47,15 @@ To set up the project locally, follow these steps:
 
 2. Install the required dependencies:
    ```bash
+   sudo apt-get update
+   ```
+
+```bash
+sudo apt-get install libjpeg-dev
+   ```
+
+
+   ```bash
    pip install -r requirements.txt
    ```
 
