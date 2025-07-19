@@ -78,7 +78,7 @@ Contributions are welcome! Please follow these steps:
 ## Team Garuda
 This project is developed by Team Garuda, consisting of the following members:
 1. **VBS** - Team Lead
-2. **Karthekeya** - Rapid DIV
+2. **Karthikeya** - Rapid DIV
 3. **Raghava** - Debugger
 4. **Sandeep** - Design and Testing
 
